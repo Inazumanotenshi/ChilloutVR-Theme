@@ -18,7 +18,3 @@ You can customize the theme by editing the `.theme.css` file. Change the colors,
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-MIT
