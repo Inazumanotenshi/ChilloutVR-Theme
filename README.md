@@ -2,14 +2,26 @@
 
 ## Description
 
-This repository contains a BetterDiscord theme inspired by the ChilloutVR user interface. It provides a dark, relaxing, and immersive user interface for Discord.
+This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutVR user interface. It provides a dark, relaxing, and immersive user interface for Discord.
 
-## Installation
+## Installation - BetterDiscord
 
 1. Ensure you have BetterDiscord installed.
-2. Clone this file: `https://github.com/NicoNicoNiih/ChilloutVR-Theme/blob/main/ChilloutVR.theme.cs`
-3. Copy the `.theme.css` file into your BetterDiscord themes folder.
+2. Copy or download this file: `https://github.com/NicoNicoNiih/ChilloutVR-Theme/blob/main/ChilloutVR.theme.cs`
+3. Copy the `.theme.css` file into your BetterDiscord themes folder. (it is in %appdata%/BetterDiscord/Themes)
 4. Enable the theme in your BetterDiscord settings.
+
+## Installation - Vencord
+
+1. Ensure you have Vencord installed.
+2. Copy or download this file: `https://github.com/NicoNicoNiih/ChilloutVR-Theme/blob/main/ChilloutVR.theme.cs`
+3. Copy the `.theme.css` file into your Vencord themes folder. (it is in %appdata%/Vencord/Themes)
+4. Enable the theme in your Theme settings.
+
+#Known issues in Vencord
+
+Cause this theme is created with BetterDiscord it has some design issues in Vencord. Buttons are not having the right clip path or get to multiline. If you have some issues that makes Vencord unusable create an issue for me. Else I'll try my best to make it as good as possible for both clients.
+
 
 ## Customization
 
