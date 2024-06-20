@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.4.1
+ * @version 0.4.2
  * @AutherID inazumanotenshi
  * @source https://raw.githubusercontent.com/NicoNicoNiih/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @updateUrl https://github.com/NicoNicoNiih/ChilloutVR-Theme
@@ -49,6 +49,7 @@
     --userareaheight: 75px; /*1080p*/ 
 }
 
+
 /*------------------------------------Header-------------------------------------------*/
 
 /*Title*/
@@ -83,6 +84,15 @@
 
 .contentRegion_c25c6d {
     background-color: var(--background-tertiary);
+}
+
+.headerText_a0 {
+    color: var(--chillout-links);
+}
+
+.item_a0 {
+    color: var(--color-text) !important;
+    clip-path: var(--chillout-hexagon-longselection);
 }
 
 /*parts that are not alligned to left*/
@@ -124,9 +134,21 @@
     color: var(--color-text);
 }
 
-/*limit button area*/
-.flex_bba380.horizontal_bba380.justifyStart_ec1a20.alignStretch_ec1a20.noWrap_ec1a20 {
-    width: 50% !important;
+/*slider*/
+.barFill_c7a159 {
+    background-color: var(--chillout-links) !important;
+}
+
+/*Mic test button*/
+.micTestButton_ca3055 {
+    background-color: var(--chillout-links) !important;
+    clip-path: var(--chillout-hexagon-longselection);
+    width: max-content;
+}
+
+.micTestButton_ca3055 div {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
 }
 
 /* all close buttons in settings*/
@@ -146,6 +168,21 @@
     margin-left: 200% !important;
     clip-path: var(--chillout-hexagon-longselection) !important;
     background-color: var(--chillout-links);
+}
+
+/*Gifcode show*/
+.promotionCardLeftContainer_e8af36 {
+    min-width: 70% !important;
+}
+
+.promotionCardButton_e8af36 {
+    max-width: 30%;
+}
+
+/*hotkey button*/
+.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeLarge_dd4f85.grow_dd4f85 {
+    background-color: var(--chillout-links);
+    clip-path: var(--chillout-hexagon-longselection);
 }
 
 /*-------------------------Server selection area---------------------------------------*/
@@ -274,6 +311,10 @@
     fill: var(--color-text) !important;
 }
 
+.listRow_e4be58 {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
 /*call actions*/
 .connection_adcaac {
     margin-left: 0px !important; 
@@ -334,6 +375,10 @@
     background-color: var(--transparent) !important;
 }
 
+.item_c2739c.item_a0.selected_a0.themed_a0 {
+    color: var(--chillout-links) !important;
+}
+
 /*add friend button*/
 .item_c2739c.addFriend_c2739c.item_a0.themed_a0 {
     background-color: var(--chillout-links);
@@ -362,6 +407,11 @@
     fill: var(--color-text);
 }
 
+/*user selection*/
+.peopleListItem_d51464 {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
 /*action buttons next to user*/
 .actions_e05dae .actionButton_e01b91 {
     clip-path: var(--chillout-hexagon-default);
@@ -373,6 +423,15 @@
 }
 
 /*activitys of friends*/
+.emptyCard_f02fcf {
+    clip-path: var(--chillout-hexagon-high);
+    background-color: var(--color-textbg);
+}
+
+.emptyText_f02fcf {
+    color: var(--color-text);
+}
+
 .itemCard_f02fcf {
     background-color: var(--color-textbg);
     clip-path: var(--chillout-hexagon-high);
@@ -390,6 +449,10 @@
     color: var(--color-text) !important;
 }
 
+/*empty friend/block/open list*/
+.emptyStateContainer_e0840f {
+    align-items: center !important;
+}
 
 /*--------------------------------------DM section-------------------------------------------*/
 /*background*/
@@ -486,6 +549,10 @@
 
 .note_c90ad7 textarea::placeholder {
     color: var(--color-text);
+}
+
+.assetsLargeImageUserPopoutV2_d5089b {
+    clip-path: var(--chillout-hexagon-default);
 }
 
 /*server icon symbols*/
