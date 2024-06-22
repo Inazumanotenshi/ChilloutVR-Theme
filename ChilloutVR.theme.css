@@ -5,15 +5,15 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.4.2
- * @AutherID inazumanotenshi
- * @source https://raw.githubusercontent.com/NicoNicoNiih/ChilloutVR-Theme/main/ChilloutVR.theme.css
- * @updateUrl https://github.com/NicoNicoNiih/ChilloutVR-Theme
+ * @version 0.5.0
+ * @autherLink https://github.com/NicoNicoNiih/
+ * @updateUrl https://raw.githubusercontent.com/NicoNicoNiih/ChilloutVR-Theme/main/ChilloutVR.theme.css
+ * @source https://github.com/NicoNicoNiih/ChilloutVR-Theme
  * @website https://blankinternational.com
  *
  * supported Plugins
  * BetterDiscord
- *  ThemeRepo, PluginRepo
+ *  BDFDB, ThemeRepo, PluginRepo, EditUser, GameActivityToggle, SpotifyControls
  *
  * Vencord
  *  ---
@@ -21,9 +21,6 @@
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
-
- /*Colored Discord Wumps pictures - Doesnt work at the moment*/
- /*@import url("https://nyri4.github.io/Discolored/main.css");*/
 
 :root {
     --ChilloutSymbol: url(https://cdn.discordapp.com/icons/410126604237406209/a_036f7da558dc12fa8ef5a314c2e80564.webp);
@@ -35,8 +32,12 @@
     --chillout-hexagon-high: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px);
     --chillout-hexagon-bighigh: polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
     
+    /*resolution specific*/
+    --userareaheight: 75px; /*1080p*/ 
+}
+
+.theme-dark {
     /*Theme specific*/
-    --__lottieIconColor: #FFFF !important;
     --background-tertiary: #292929;
     --color-text: #FFFF;
     --color-textbg: #5f5f5f;
@@ -44,11 +45,18 @@
     --chillout-ping: #ff3c003a;
     --transparent: #ffffff00;
     --background-secondary-alt: var(--background-tertiary);
-
-    /*resolution specific*/
-    --userareaheight: 75px; /*1080p*/ 
 }
 
+.theme-light {
+    /*Theme specific*/
+    --background-tertiary: #FFFF;
+    --color-text: #5f5f5f;
+    --color-textbg: #9c9c9c;
+    --chillout-links: #ff3c00;
+    --chillout-ping: #ff3c003a;
+    --transparent: #ffffff00;
+    --background-secondary-alt: var(--background-tertiary);
+}
 
 /*------------------------------------Header-------------------------------------------*/
 
@@ -536,6 +544,11 @@
     background-color: var(--background-tertiary);
 }
 
+/*Links in messages*/
+.anchor_af404b.anchorUnderlineOnHover_af404b span {
+    color: var(--chillout-links);
+}
+
 /*Note*/
 .note_c90ad7 {
     background-color: var(--color-textbg);
@@ -700,6 +713,10 @@
     background-color: var(--background-tertiary) !important;
 }
 
+.bd-sidebar-header-label {
+    color: var(--chillout-links) !important;
+}
+
 /*----------Plugins-------------*/
 
 .container__33507 {
@@ -785,6 +802,77 @@
     background-color: var(--background-tertiary);
 }
 
+/*Theme & Plugin-Repo*/
+.tabBarItem_b9fccc.item_a0.themed_a0 {
+    clip-path: unset;
+}
+
+.flexChild_bba380.container_c18ec9.small_c18ec9 {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--color-textbg);
+}
+
+.flexChild_bba380.container_c18ec9.small_c18ec9 .inner_c18ec9 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeTiny_dd4f85.grow_dd4f85 {
+    background-color: var(--chillout-links);
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+
+/*Edit users*/
+.flex_bba380.horizontal_bba380.justifyStart_ec1a20.alignCenter_ec1a20.noWrap_ec1a20.header_f9a4c9.hasSiblings_fRyjyl,
+.flex_bba380.horizontal_bba380.justifyStart_ec1a20.alignStretch_ec1a20.noWrap_ec1a20 {
+    background-color: var(--background-tertiary);
+}
+
+.container_ed1d57.settingsRow_o9Ft44.marginReset_f7730b .labelRow_ed1d57 .control_ed1d57 {
+    margin-right: 5px;
+}
+
+.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeMedium_dd4f85.grow_dd4f85 {
+    background-color: var(--chillout-links);
+}
+
+.inputWrapper_f8bc55 {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.inputWrapper_f8bc55 input {
+    background-color: var(--color-textbg) !important;
+}
+
+/*Spotify Controls*/
+.song_tIdBpF {
+    color: var(--chillout-links);
+}
+
+.interpret_F93iqP {
+    color: var(--color-text);
+}
+
+.cover_SwJ-ck {
+    clip-path: var(--chillout-hexagon-default);
+}
+
+.flex_bba380.horizontal_bba380.justifyStart_ec1a20.alignStretch_ec1a20.noWrap_ec1a20 .button_f67531.enabled_f67531.button_dd4f85.lookBlank_dd4f85.colorBrand_dd4f85.grow_dd4f85 div {
+    color: var(--color-text);
+}
+
+.bar_g2ZMIm {
+    background-color: var(--color-textbg) !important;
+}
+
+.barFill_Dhkah7 {
+    background-color: var(--chillout-links) !important;
+}
+
+.barText_lmqc5O div {
+    color: var(--color-text);
+}
 
 /*----------Themes-------------*/
 
