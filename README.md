@@ -19,11 +19,11 @@ This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutV
 3. Copy the `.theme.css` file into your Vencord themes folder. (it is in %appdata%/Vencord/Themes)
 4. Enable the theme in your Theme settings.
 
-##Known issues in Vencord
+## Known issues - BetterDiscord
 
 Auto-update doesnt work - Theme currently not commited to BetterDiscord website.
 
-##Known issues in Vencord
+## Known issues - Vencord
 
 Cause this theme is created with BetterDiscord it has some design issues in Vencord. Buttons are not having the right clip path or get to multiline. If you have some issues that makes Vencord unusable create an issue for me. Else I'll try my best to make it as good as possible for both clients.
 
