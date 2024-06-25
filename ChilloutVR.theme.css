@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.5.0
+ * @version 0.5.1
  * @autherLink https://github.com/NicoNicoNiih/
  * @updateUrl https://raw.githubusercontent.com/NicoNicoNiih/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/NicoNicoNiih/ChilloutVR-Theme
@@ -369,6 +369,19 @@
     clip-path: var(--chillout-hexagon-longselection);
     width: 100%;
     margin-left: 10px;
+}
+
+/*user profile card*/
+.container_c1519f .tabBar_c1519f .tabBarItem_c1519f {
+    clip-path: none;
+}
+
+.button_f1cdcc.banner_f1cdcc.button_dd4f85.lookFilled_dd4f85.colorPrimary_dd4f85.color_f1cdcc.banner_f1cdcc {
+    clip-path: var(--chillout-hexagon-default);
+}
+
+.button_f1cdcc.text_f1cdcc.button_dd4f85.lookFilled_dd4f85.colorPrimary_dd4f85.color_fcef98.sizeSmall_dd4f85.grow_dd4f85 {
+    clip-path: var(--chillout-hexagon-longselection);
 }
 
 /*--------------------------------------friend list------------------------------------------*/
