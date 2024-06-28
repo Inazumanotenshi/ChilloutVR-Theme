@@ -213,6 +213,10 @@
     content: var(--ChilloutSymbol);
 }
 
+.acronym_f90abb {
+    content: unset !important;
+}
+
 /*dms & server in folder*/
 .icon_f90abb {
     clip-path: var(--chillout-hexagon-default);
