@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.5.4
+ * @version 0.5.6
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -50,7 +50,7 @@
 .theme-light {
     /*Theme specific*/
     --background-tertiary: #FFFF;
-    --color-text: #5f5f5f;
+    --color-text: #292929;
     --color-textbg: #9c9c9c;
     --chillout-links: #ff3c00;
     --chillout-ping: #ff3c003a;
@@ -89,7 +89,6 @@
 .winButton_a934d8 svg polygon {
     fill: var(--color-text) !important;
 }
-
 
 /*-------------------------------------Settings----------------------------------------------*/
 /*replace Discord icon in symbol selection*/
@@ -170,6 +169,21 @@
     margin-left: 5px !important;
     margin-right: 5px !important;
 }
+
+/*Checkboxes*/
+.radioBar_eb92a8 div svg path {
+    fill: var(--transparent);
+}
+
+.itemFilled_eb92a8 .radioBar_eb92a8 div svg {
+    border: var(--color-text) !important;
+    border-color: var(--color-text) !important;
+    border-style: solid !important;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+/*Todo inner Checkbox*/
+
 
 /* all close buttons in settings*/
 .closeButton_df5532 {
@@ -506,6 +520,12 @@
 .icon_e44302 path {
     fill: var(--color-text);
 }
+
+/*profile pictures*/
+.avatar_f9f2ca.clickable_f9f2ca {
+    clip-path: var(--chillout-hexagon-default);
+}
+
 
 /*images*/
 .imageWrapper_d4597d {
