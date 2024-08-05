@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.5.9
+ * @version 0.5.10
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -337,7 +337,8 @@
 }
 
 /*Toggle buttons in user area*/
-.container_b2ca13 .flex_bba380 {
+.container_b2ca13 .flex_bba380,
+.container_b2ca13 .flex_dc333f {
     margin-left: 30% !important;
 }
 
