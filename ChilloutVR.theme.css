@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.5.11
+ * @version 0.6.0
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -548,6 +548,16 @@
     clip-path: var(--chillout-hexagon-high);
 }
 
+/*app button*/
+.buttonContainer_df39bd.app-launcher-entrypoint {
+    background-color: var(--color-textbg);
+    clip-path: var(--chillout-hexagon-default);
+}
+
+.buttonContainer_df39bd.app-launcher-entrypoint button {
+    background-color: var(--color-textbg);
+}
+
 .iconContainer_effbe2 {
     margin-right: 15%;
 }
@@ -641,6 +651,29 @@
 /*Disable star cause of clipping*/
 .flowerStar_ff7d90 {
     display: none;
+}
+
+/*app section*/
+.searchBarContainer_c7c1c7 {
+    background-color: var(--background-tertiary);
+}
+
+.container_c18ec9.medium_c18ec9 {
+    background-color: var(--color-textbg);
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.container_e5da8b.containerBorderRadius_e5da8b,
+.container_fb1469 {
+    clip-path: var(--chillout-hexagon-high);
+}
+
+.icon_a94328 {
+    clip-path: var(--chillout-hexagon-default);
+}
+
+.sectionRowsContentContainer_c7c1c7.sectionContentContainer_c7c1c7 {
+    clip-path: var(--chillout-hexagon-bighigh);
 }
 
 
