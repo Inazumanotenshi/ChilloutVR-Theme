@@ -1,9 +1,12 @@
-# ChilloutVR Inspired BetterDiscord Theme
+# ChilloutVR InspiredDiscord Theme
 
 This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutVR user interface. It provides a dark, relaxing, and immersive user interface for Discord.
 
 ![image](https://github.com/user-attachments/assets/bf961895-6158-47da-b71b-96443b141ad8)
 
+## Important information
+
+The min-theme.css is only updated when fixes on theme.css are confirmed and without issues.
 
 ## Installation - BetterDiscord
 
