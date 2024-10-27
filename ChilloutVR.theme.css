@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.6.3
+ * @version 0.6.4
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -16,7 +16,7 @@
  *  BDFDB, ThemeRepo, PluginRepo, EditUser, GameActivityToggle, SpotifyControls
  *
  * Vencord
- *  ---
+ *  Default Units, EditUser, 
  */
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
@@ -619,9 +619,13 @@
 }
 
 /*message input*/
-.scrollableContainer_d0696b {
+.channelTextArea_a7d72e  {
+    background-color: var(--color-textbg) !important;
+    clip-path: var(--chillout-hexagon-high) !important;
+}
+
+.scrollableContainer_bdf0de {
     background-color: var(--color-textbg);
-    clip-path: var(--chillout-hexagon-high);
 }
 
 .placeholder_a552a6 {
@@ -631,6 +635,10 @@
 /*attach button*/
 .attachButtonInner_f298d4 svg path {
     fill: var(--color-text) !important;
+}
+
+.buttons_bdf0de div svg path {
+    fill: var(--color-text);
 }
 
 /*dm user inforamtion*/
