@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.6.2
+ * @version 0.6.3
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -715,6 +715,20 @@
 
 
 /*----------------------------------------Server---------------------------------------------*/
+
+/*Commit Buttons*/
+.submitButton_c1668f {
+    max-width: 20%;
+}
+
+/*Input*/
+.inputWrapper_f8bc55.flex_a2b402 {
+    background-color: var(--color-textbg);
+}
+
+.inputMaxLength_a2b402.flex_a2b402 {
+    margin-left: 15px;
+}
 
 /*channel list & banner*/
 .container_cbd271,
