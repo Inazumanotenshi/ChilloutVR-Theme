@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.6.4
+ * @version 0.6.6
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -13,7 +13,7 @@
  *
  * supported Plugins
  * BetterDiscord
- *  BDFDB, ThemeRepo, PluginRepo, EditUser, GameActivityToggle, SpotifyControls
+ *  BDFDB, ThemeRepo, PluginRepo, EditUser, GameActivityToggle, SpotifyControls, ShowAllActionButtons,
  *
  * Vencord
  *  Default Units, EditUser, 
@@ -424,6 +424,11 @@
     margin-left: 10px;
 }
 
+/*call stream*/
+.videoWrapper_f8a4f3 {
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
 /*user profile card*/
 .container_c1519f .tabBar_c1519f .tabBarItem_c1519f {
     clip-path: none;
@@ -443,6 +448,36 @@
 
 .wrapper_cb78f1 div button {
     clip-path: unset;
+}
+
+/*user area information*/
+.tabBarItem_ecc04c.item_a0.themed_a0 {
+    clip-path: unset;
+}
+
+.tabBarItem_ecc04c.item_a0.selected_a0.themed_a0 div,
+.tabBarItem_ecc04c.item_a0.selected_a0.themed_a0 {
+    color: var(--chillout-links) !important;
+    border-bottom-color: var(--chillout-links);
+}
+
+.fullSizeOverlayBackground_c69a7b.overlayBackground_c69a7b.overlay_b9fccc {
+    background-color: var(--color-textbg);
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
+.fullSizeOverlayBackground_c69a7b.overlayBackground_c69a7b.overlay_b9fccc .scroller_d53fbd.thin_c49869.scrollerBase_c49869.fade_c49869 {
+    background-color: var(--color-textbg) !important;
+}
+
+.button_f9d37d.button_dd4f85.lookFilled_dd4f85 {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.defaultColor_a595eb span,
+.defaultColor_a595eb,
+.defaultColor_e42ec6 {
+    color: var(--color-text) !important;
 }
 
 /*--------------------------------------friend list------------------------------------------*/
@@ -683,7 +718,7 @@
 }
 
 /*server icon symbols*/
-.icon_f11207 {
+.icon_a64689 {
     clip-path: var(--chillout-hexagon-default);
 }
 
