@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.6.6
+ * @version 0.6.7
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -16,7 +16,7 @@
  *  BDFDB, ThemeRepo, PluginRepo, EditUser, GameActivityToggle, SpotifyControls, ShowAllActionButtons,
  *
  * Vencord
- *  Default Units, EditUser, 
+ *  Default Units, EditUser, PinDMs
  */
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
@@ -33,7 +33,8 @@
     --chillout-hexagon-bighigh: polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px);
     
     /*resolution specific*/
-    --userareaheight: 75px; /*1080p*/ 
+    --userareaheight: 75px; /*1080p*/ /*18:9 | 22:9*/
+
 }
 
 .theme-dark {
@@ -58,10 +59,14 @@
     --background-secondary-alt: var(--background-tertiary);
 }
 
+/*All*/
+* {
+    /*keep this for custom fonts or styles*/
+}
+
 /*------------------------------------Header-------------------------------------------*/
 
 /*Title*/
-
 .wordmark_a934d8 svg g {
     fill: var(--color-text) !important;
 }
@@ -309,7 +314,9 @@
 }
 
 /*usernames and list*/
-.name_f9647d {
+.name_ec8679,
+.activityText_c91bad,
+.customStatus_b2ca13 {
     color: var(--color-text);
 }
 
@@ -350,7 +357,8 @@
     margin-left: 15% !important;
 }
 
-.title_d1da5f {
+.title_d1da5f,
+.hovered_e07331 {
     color: var(--color-text);
 }
 
@@ -491,6 +499,11 @@
 .theme_dark,
 .themed_e44302 {
     background-color: var(--transparent) !important;
+}
+
+/*User status*/
+.text_f7ebfd {
+    color: var(--color-text);
 }
 
 .item_c2739c.item_a0.selected_a0.themed_a0 {
@@ -807,6 +820,11 @@
     background-color: var(--color-textbg);
 }
 
+/*USK18 warning*/
+.flex_dc333f.horizontal_dc333f.justifyCenter_ec1a20.alignCenter_ec1a20.noWrap_ec1a20 button {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
 /*edit channel button*/
 .button_ccfa44.lookBlank_dd4f85.colorBrand_dd4f85.sizeMin_dd4f85.grow_dd4f85 {
     margin-left: -3% !important;
@@ -1090,6 +1108,16 @@
 .container_lsd8Sa .tabBar_d8bb15 .tab_d8bb15 {
     clip-path: unset;
 }
+
+.contents_dd4f85 {
+    color: var(--color-text);
+}
+
+/*PinDMs*/
+.content_eed6a8 h2 span {
+    font-family: "Arial Narrow", "Courier New", monospace !important;
+}
+
 
 /*----------Themes-------------*/
 
