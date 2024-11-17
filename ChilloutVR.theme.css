@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.6.8
+ * @version 0.6.9
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -325,11 +325,6 @@
     clip-path: var(--chillout-hexagon-default) !important;
 }
 
-/*user area with activity ...*/
-/*.panels_a4d4d9 {
-    
-}*/
-
 /*activity*/
 .activityPanel_a4d4d9 {
     background-color: var(--background-tertiary) !important;
@@ -458,6 +453,13 @@
     clip-path: unset;
 }
 
+/*Big User Card*/
+.overlay_c69a7b.fullSize_c69a7b.overlay_b9fccc {
+    background-color: var(--background-tertiary);
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
+
 /*user area information*/
 .tabBarItem_ecc04c.item_a0.themed_a0 {
     clip-path: unset;
@@ -493,6 +495,20 @@
     clip-path: var(--chillout-hexagon-bighigh);
     background-color: var(--color-textbg);
 }
+
+/*user popup card*/
+.inner_c69a7b.biteSize_c69a7b {
+    background-color: var(--background-tertiary) !important;
+}
+
+.footer_b8cc6d {
+    background-color: var(--background-tertiary);
+}
+
+.channelTextArea_bdf0de {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
 
 /*--------------------------------------friend list------------------------------------------*/
 .container_c2739c,
