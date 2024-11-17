@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.6.7
+ * @version 0.6.8
  * @autherLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -13,7 +13,7 @@
  *
  * supported Plugins
  * BetterDiscord
- *  BDFDB, ThemeRepo, PluginRepo, EditUser, GameActivityToggle, SpotifyControls, ShowAllActionButtons,
+ *  BDFDB, ThemeRepo, PluginRepo, EditUser, GameActivityToggle, SpotifyControls, ShowAllActionButtons, AddReminder
  *
  * Vencord
  *  Default Units, EditUser, PinDMs, GameActivityToggle, SpotifyControls
@@ -488,6 +488,12 @@
     color: var(--color-text) !important;
 }
 
+.overlay_c69a7b.panel_c69a7b.overlay_a972fe,
+.overlay_c69a7b.panel_c69a7b.overlay_a8795b {
+    clip-path: var(--chillout-hexagon-bighigh);
+    background-color: var(--color-textbg);
+}
+
 /*--------------------------------------friend list------------------------------------------*/
 .container_c2739c,
 .container_fc4f04,
@@ -697,7 +703,7 @@
     background-color: var(--background-tertiary) !important;
 }
 
-.bannerSVGWrapper_b32cc2 {
+.banner_d5fdb1 {
     clip-path: var(--chillout-hexagon-high);
 }
 
@@ -1116,6 +1122,42 @@
 /*PinDMs*/
 .content_eed6a8 h2 span {
     font-family: "Arial Narrow", "Courier New", monospace !important;
+}
+
+/*Reminder*/
+.reminder-button {
+    background-color: var(--color-textbg) !important;
+    clip-path: var(--chillout-hexagon-longselection) !important;
+    color: var(--color-text) !important;
+}
+
+.bd-modal-root.bd-modal-small {
+    clip-path: var(--chillout-hexagon-bighigh);
+    background-color: var(--background-tertiary);
+}
+
+.bd-modal-footer {
+    background-color: var(--background-tertiary);
+}
+
+#reminderText,
+#reminderText::placeholder,
+#reminderTime,
+.bd-modal-content.bd-scroller-base.bd-scroller-thin div button{
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--color-textbg) !important;
+    color: var(--color-text) !important;
+}
+
+.bd-button.bd-button-filled.bd-button-color-brand.bd-button-medium.bd-button-grow {
+    background-color: var(--chillout-links);
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.bd-button.bd-button-link.bd-button-color-primary.bd-button-medium.bd-button-grow {
+    background-color: var(--color-textbg);
+    clip-path: var(--chillout-hexagon-longselection);   
+    margin-right: 5px; 
 }
 
 
