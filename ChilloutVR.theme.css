@@ -5,8 +5,8 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.6.9
- * @autherLink https://github.com/Inazumanotenshi/
+ * @version 0.6.10
+ * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
  * @website https://blankinternational.com
@@ -17,6 +17,15 @@
  *
  * Vencord
  *  Default Units, EditUser, PinDMs, GameActivityToggle, SpotifyControls
+ *
+ *
+ * supported Themes
+ * BetterDiscord
+ *  AMOLED-Cord
+ *
+ * Vencord
+ *
+ *
  */
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
@@ -34,7 +43,6 @@
     
     /*resolution specific*/
     --userareaheight: 75px; /*1080p*/ /*18:9 | 22:9*/
-
 }
 
 .theme-dark {
@@ -195,6 +203,7 @@
     margin-left: 10px;
     margin-top: 2px;
 }
+
 /*Todo inner Checkbox*/
 
 
@@ -249,7 +258,7 @@
 /*-------------------------Server selection area---------------------------------------*/
 
 /*Discord Icon*/
-.childWrapper_f90abb {
+.wrapper_f90abb[role="treeitem"] .childWrapper_f90abb {
     clip-path: var(--chillout-hexagon-default);
     content: var(--ChilloutSymbol);
 }
@@ -322,7 +331,7 @@
 
 /*user profile pictures*/
 .avatarStack_c51b4e img {
-    clip-path: var(--chillout-hexagon-default) !important;
+    clip-path: var(--chillout-hexagon-default) !important;    
 }
 
 /*activity*/
