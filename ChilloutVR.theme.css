@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.7.0
+ * @version 0.7.1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -404,6 +404,7 @@
 .inner_e131a9 div {
     width: 129% !important;
 }
+
 /*action buttons call*/
 .actionButtons_e131a9 {
     margin-left: -5% !important;
@@ -521,8 +522,12 @@
     background-color: var(--background-tertiary);
 }
 
-.channelTextArea__74017 {
-    clip-path: var(--chillout-hexagon-longselection);
+.container_a99829.channelTextArea__74017 {
+    clip-path: var(--chillout-hexagon-high);
+}
+
+.container_a99829.channelTextArea__74017 .inner_a99829 {
+    background-color: var(--color-textbg);
 }
 
 
@@ -705,17 +710,26 @@
 }
 
 /*message input*/
-.channelTextArea_f75fb0  {
-    background-color: var(--color-textbg) !important;
-    clip-path: var(--chillout-hexagon-high) !important;
+.channelTextArea_f75fb0 {
+    background-color: var(--background-tertiary);
 }
 
 .scrollableContainer__74017 {
     background-color: var(--color-textbg);
+    clip-path: var(--chillout-hexagon-high);
 }
 
 .placeholder__1b31f {
     color: var(--color-text);
+}
+
+/*@persons*/
+.autocomplete__13533 {
+    clip-path: var(--chillout-hexagon-high);
+}
+
+.autocompleteInner__13533 .scroller__6b0e0 {
+    background-color: var(--color-textbg) !important;
 }
 
 /*attach button*/
