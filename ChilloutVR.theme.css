@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.7.3
+ * @version 0.7.4
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -347,16 +347,26 @@
 }
 
 /*user area*/
+
+/*Remove later*/
+.content__37e49 {
+    display: flex !important;
+    container-type: unset;
+}
+/*Remove later End*/
+
 .container__37e49 {
     background-color: var(--background-tertiary) !important;
     height: var(--userareaheight);
-    display: block;
+    display: flex !important;
+    container-type: inline-size !important;
 }
 
 /*username and pic align with buttons*/
 .avatarWrapper__37e49 {
-    display: flex;
+    display: flex !important;
     height: 100% !important;
+    min-width: 230px !important;
 }
 
 /*user profile picture*/
@@ -386,10 +396,17 @@
 }
 
 /*Toggle buttons in user area*/
-.container__37e49 .flex__7c0ba {
-    margin-top: 15% !important;
-    margin-left: -80% !important;
+.flex__7c0ba.horizontal__7c0ba {
+    position: relative !important;
+    top: 25% !important;
+    left: -75% !important;
 }
+
+/*Remove later*/
+.content__37e49 .flex__7c0ba {
+    left: -50% !important;    
+}
+/*Remove later END*/
 
 .button__67645 {
     clip-path: var(--chillout-hexagon-default);
@@ -1215,9 +1232,18 @@
 }
 
 /*GameActivityToggle*/
-.gameActivityToggleAdded_Yd-YxC .content__37e49 .flex__7c0ba button {
-    left: -20px !important;
+.gameActivityToggleAdded_Yd-YxC {
+    background-color: var(--background-tertiary) !important;
+    height: var(--userareaheight);
+    display: block;
 }
+
+/*Remove later*/
+.gameActivityToggleAdded_Yd-YxC .content__37e49 .flex__7c0ba {
+    left: -46% !important;    
+}
+/*Remove later END*/
+
 
 /*----------Themes-------------*/
 
