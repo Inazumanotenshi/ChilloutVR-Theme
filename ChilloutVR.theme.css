@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.7.5 nightly
+ * @version 0.7.6 nightly
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -349,7 +349,7 @@
 /*user area*/
 
 /*Remove later*/
-.content__37e49 {
+.buttons__37e49 {
     display: flex !important;
     container-type: unset;
 }
@@ -387,26 +387,17 @@
 }
 
 .title_d1da5f,
-.hovered__0263c {
+.hovered__0263c,
+.subtext__339d0 {
     color: var(--color-text);
 }
 
-.subtext__339d0 {
-    color: var(--color-text);    
-}
-
 /*Toggle buttons in user area*/
-.flex__7c0ba.horizontal__7c0ba.buttons__37e49 {
+.panels_c48ade .container__37e49 .buttons__37e49 {
     position: relative !important;
     top: 25% !important;
     left: -75% !important;
 }
-
-/*Remove later*/
-.content__37e49 .flex__7c0ba {
-    left: -50% !important;    
-}
-/*Remove later END*/
 
 .button__67645 {
     clip-path: var(--chillout-hexagon-default);
@@ -1239,7 +1230,7 @@
 }
 
 /*Remove later*/
-.gameActivityToggleAdded_Yd-YxC .content__37e49 .flex__7c0ba {
+.gameActivityToggleAdded_Yd-YxC .content__37e49 .buttons__37e49 {
     left: -46% !important;    
 }
 /*Remove later END*/
