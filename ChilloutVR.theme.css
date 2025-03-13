@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.7.6 nightly
+ * @version 0.7.7 nightly
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -348,13 +348,6 @@
 
 /*user area*/
 
-/*Remove later*/
-.buttons__37e49 {
-    display: flex !important;
-    container-type: unset;
-}
-/*Remove later End*/
-
 .container__37e49 {
     background-color: var(--background-tertiary) !important;
     height: var(--userareaheight);
@@ -377,8 +370,9 @@
 
 /*name and status*/
 .nameTag__37e49 {
-    margin-top: -15% !important;
-    margin-left: 15% !important;
+    margin-top: -35% !important;
+    margin-left: 40% !important;
+    min-width: 200% !important;
 }
 
 .customStatus__37e49 {
@@ -396,7 +390,8 @@
 .panels_c48ade .container__37e49 .buttons__37e49 {
     position: relative !important;
     top: 25% !important;
-    left: -75% !important;
+    left: -10% !important;
+    margin-left: 0% !important;
 }
 
 .button__67645 {
@@ -1228,13 +1223,6 @@
     height: var(--userareaheight);
     display: block;
 }
-
-/*Remove later*/
-.gameActivityToggleAdded_Yd-YxC .content__37e49 .buttons__37e49 {
-    left: -46% !important;    
-}
-/*Remove later END*/
-
 
 /*----------Themes-------------*/
 
