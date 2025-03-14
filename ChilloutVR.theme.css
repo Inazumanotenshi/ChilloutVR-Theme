@@ -5,7 +5,7 @@
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.7.8 nightly
+ * @version 0.7.9
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -13,10 +13,10 @@
  *
  * supported Plugins
  * BetterDiscord
- *  BDFDB, ThemeRepo, PluginRepo, EditUser, SpotifyControls, ShowAllActionButtons, AddReminder
+ *  BDFDB, ThemeRepo, PluginRepo, EditUser, SpotifyControls, ShowAllActionButtons, AddReminder, GameActivityToggle
  *
  * Vencord
- *  Default Units, EditUser, PinDMs, SpotifyControls
+ *  Default Units, EditUser, PinDMs, SpotifyControls, GameActivityToggle
  *
  *
  * supported Themes
@@ -391,6 +391,10 @@
     position: relative !important;
     top: 25% !important;
     left: -75% !important;
+}
+
+.micButtonParent__37e49 {
+    margin-right: 0%;
 }
 
 .button__67645 {
@@ -1221,6 +1225,16 @@
     background-color: var(--background-tertiary) !important;
     height: var(--userareaheight);
     display: block;
+}
+
+.gameActivityToggleAdded_Yd-YxC .avatarWrapper__37e49 .nameTag__37e49 {
+    position: absolute !important;
+    margin-top: -13% !important;
+    margin-left: 30% !important;
+}
+
+.panels_c48ade .container__37e49.gameActivityToggleAdded_Yd-YxC .buttons__37e49 {
+    left: -10% !important;
 }
 
 /*----------Themes-------------*/
