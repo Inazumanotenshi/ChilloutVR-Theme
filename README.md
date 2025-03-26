@@ -1,3 +1,5 @@
+# BROKEN caused by Discords css update!!!
+
 # ChilloutVR Inspired Discord Theme
 
 This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutVR user interface. It provides a dark, relaxing, and immersive user interface for Discord.
@@ -25,7 +27,8 @@ The min-theme.css is only updated when fixes on theme.css are confirmed and with
 
 ## Known issues - BetterDiscord
 
-Auto-update doesnt work - Theme currently not commited to BetterDiscord website.
+1. auto-update doesnt work - Theme currently not commited to BetterDiscord website.
+2. resizing sidebar causes user area to break
 
 ## Known issues - Vencord
 
