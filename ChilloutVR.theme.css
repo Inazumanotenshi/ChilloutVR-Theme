@@ -459,8 +459,11 @@
 
 /*call actions*/
 .connection_e131a9 {
-    margin-left: 0px !important; 
-    width: 100% !important;
+    margin-left: 5% !important; 
+}
+
+.connection_e131a9 .voiceButtonsContainer_e131a9 .button__67645 {
+    background-color: var(--color-textbg);
 }
 
 .inner_e131a9 div {
@@ -469,8 +472,9 @@
 
 /*action buttons call*/
 .actionButtons_e131a9 {
-    margin-left: -5% !important;
+    margin-left: 5%;
     margin-right: 5%;
+    gap: 5% !important;
 }
 
 .button_e131a9 {
@@ -983,12 +987,6 @@
 
 
 /*-----------------------------------------Calls-------------------------------------------*/
-/*user area call*/
-.connection_e131a9 .flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 {
-    margin-right: 0px !important;
-    width: 30% !important;
-}
-
 .headerWrapper_cb9592 {
     background-color: var(--background-tertiary) !important;
 }
@@ -1175,8 +1173,8 @@
 }
 
 /*Edit users*/
-.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignCenter_abf706.noWrap_abf706.header__49fc1.hasSiblings_fRyjyl,
-.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 {
+.marginBottom8_fd297e .flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignCenter_abf706.noWrap_abf706.header__49fc1.hasSiblings_fRyjyl,
+.marginBottom8_fd297e .flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 {
     background-color: var(--background-tertiary);
 }
 
