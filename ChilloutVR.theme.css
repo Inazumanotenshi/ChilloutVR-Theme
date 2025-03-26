@@ -1,11 +1,12 @@
 /**
  * @name ChilloutVR
- * @author Inazumanotenshi - Sharing and upload allow by c Alpha Blend Interactive
+ * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
- * @version 0.7.9
+                - Sharing and upload allow by c Alpha Blend Interactive
+ * @version 0.8.0
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -13,7 +14,7 @@
  *
  * supported Plugins
  * BetterDiscord
- *  BDFDB, ThemeRepo, PluginRepo, EditUser, SpotifyControls, ShowAllActionButtons, AddReminder, GameActivityToggle
+ *  BDFDB, EditUser, SpotifyControls, ShowAllActionButtons, AddReminder, GameActivityToggle
  *
  * Vencord
  *  Default Units, EditUser, PinDMs, SpotifyControls, GameActivityToggle
@@ -29,7 +30,7 @@
  */
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
-@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+/*@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");*/
 
 :root {
     --ChilloutSymbol: url(https://cdn.discordapp.com/icons/410126604237406209/a_036f7da558dc12fa8ef5a314c2e80564.webp);
@@ -53,7 +54,6 @@
     --chillout-links: #ff3c00;
     --chillout-ping: #ff3c003a;
     --transparent: #ffffff00;
-    --background-secondary-alt: var(--background-tertiary);
 }
 
 .theme-light {
@@ -64,12 +64,11 @@
     --chillout-links: #ff3c00;
     --chillout-ping: #ff3c003a;
     --transparent: #ffffff00;
-    --background-secondary-alt: var(--background-tertiary);
 }
 
 /*All*/
 * {
-    /*keep this for custom fonts or styles*/
+    
 }
 
 /*------------------------------------Header-------------------------------------------*/
@@ -95,15 +94,45 @@
     background-color: var(--background-tertiary) !important;
 }
 
-.winButtonClose__421ed {
+.winButtonClose_c38106 {
     background-color: var(--chillout-links);
 }
 
-.winButton__421ed svg polygon {
+.winButton_c38106 svg polygon {
     fill: var(--color-text) !important;
 }
 
 /*-------------------------------------Settings----------------------------------------------*/
+/*Searchbar*/
+.searchBar_c7e907 {
+    border: none !important;
+}
+
+.inner_fea832.thin_d125d2 {
+    background-color: var(--color-textbg) !important;
+    clip-path: var(--chillout-hexagon-longselection) !important;
+}
+
+.inner_fea832.thin_d125d2 .input_fea832 {
+    color: var(--color-text);
+}
+
+.inner_fea832.thin_d125d2 .input_fea832::placeholder {
+    color: var(--color-text);
+}
+
+/*selected tab*/
+.selected_b3f026::after {
+    --selected-tab-item-color: var(--chillout-links) !important;
+}
+
+/*Buttons*/
+.button__201d5.lookOutlined__201d5,
+.fieldButton__1fed1.button__201d5 {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--color-textbg);
+}
+
 /*replace Discord icon in symbol selection*/
 .appIconSelection__8a3d7 img[src="/assets/b17d7d96515d6d98856b.webp"] {
     content: var(--ChilloutSymbol);    
@@ -174,6 +203,16 @@
     color: var(--color-text);
 }
 
+/*dropdowns*/
+.popout__3f413 {
+    clip-path: var(--chillout-hexagon-bighigh);
+    --background-tertiary: var(--color-textbg);
+}
+
+.option__3f413 {
+    color: var(--color-text) !important;
+}
+
 /*slider*/
 .barFill_a562c8 {
     background-color: var(--chillout-links) !important;
@@ -242,6 +281,11 @@
     max-width: 30%;
 }
 
+/*Giftcode input*/
+.inputDefault__0f084.input__0f084::placeholder {
+    color: var(--color-text) !important;
+}
+
 /*hotkey button*/
 .button__201d5.lookFilled__201d5.colorBrand__201d5.sizeLarge__201d5.grow__201d5 {
     background-color: var(--chillout-links);
@@ -262,6 +306,12 @@
     color: var(--color-text) !important;
 }
 
+/*selected icon*/
+.selectedIcon__3f413 {
+    color: var(--chillout-links);
+    clip-path: var(--chillout-hexagon-default) !important;
+}
+
 /*-------------------------Server selection area---------------------------------------*/
 
 /*Discord Icon*/
@@ -273,6 +323,10 @@
 .acronym__6e9f8 {
     content: unset !important;
 }
+
+/*Todo*/
+/*opened server folder*/
+
 
 /*dms & server in folder*/
 .icon__6e9f8 {
@@ -350,7 +404,7 @@
 
 .container__37e49 {
     background-color: var(--background-tertiary) !important;
-    height: var(--userareaheight);
+    height: var(--userareaheight) !important;
     display: flex !important;
     container-type: inline-size !important;
 }
@@ -359,25 +413,19 @@
 .avatarWrapper__37e49 {
     display: flex !important;
     height: 100% !important;
-    min-width: 230px !important;
 }
 
 /*user profile picture*/
 .avatar__37e49 svg {
-    height: 250% !important;
-    margin-top: -50% !important;
+    height: 200% !important;
+    margin-top: -35% !important;
 }
 
 /*name and status*/
 .nameTag__37e49 {
-    margin-top: -15% !important;
-    margin-left: 15% !important;
-    min-width: 200% !important;
-}
-
-.customStatus__37e49 {
-    width: 200px !important;
-    overflow: visible !important;
+    position: absolute;
+    margin-top: -8% !important;
+    margin-left: 22% !important;
 }
 
 .title_d1da5f,
@@ -388,9 +436,9 @@
 
 /*Toggle buttons in user area*/
 .panels_c48ade .container__37e49 .buttons__37e49 {
-    position: relative !important;
-    top: 25% !important;
-    left: -75% !important;
+    position: absolute;
+    margin-top: 10% !important;
+    left: 22% !important;
 }
 
 .micButtonParent__37e49 {
@@ -567,6 +615,11 @@
     color: var(--chillout-links) !important;
 }
 
+/*Add friend area*/
+.addFriendInputWrapper__72ba7 {
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
 /*add friend button*/
 .item__133bf.addFriend__133bf.item_b3f026.themed_b3f026 {
     background-color: var(--chillout-links);
@@ -575,7 +628,8 @@
 
 /*Add friend search bar*/
 .inputWrapper__0f084.addFriendInput__72ba7.inputText__72ba7 {
-    min-width: 1000px;
+    min-width: 80%;
+    width: 100%;
     background-color: var(--color-textbg);
 }
 
@@ -686,8 +740,9 @@
 
 /*search message*/
 .searchBar__97492 {
-    background-color: var(--color-textbg);
+    background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-high);
+    border: none;
 }
 
 /*app button*/
@@ -726,6 +781,7 @@
 /*message input*/
 .channelTextArea_f75fb0 {
     background-color: var(--background-tertiary);
+    border: none;
 }
 
 .scrollableContainer__74017 {
@@ -967,6 +1023,16 @@
     fill: var(--color-text) !important;
 }
 
+/*Server call actions*/
+.experimentButtonSection__1405b {
+    clip-path: var(--chillout-hexagon-high);
+    background-color: var(--color-textbg) !important;
+}
+
+.experimentWrapper__1405b div .attachedCaretButtonContainer_f1ceac div .staticButton_f1ceac {
+    clip-path: var(--chillout-hexagon-high) !important;
+}
+
 
 /*-------------------------------------BetterDiscord---------------------------------------*/
 
@@ -1013,8 +1079,10 @@
 .bd-sidebar-header-label {
     color: var(--chillout-links) !important;
 }
-
-/*----------Plugins-------------*/
+/*BD Informations*/
+.info__2debe .bd-text-muted.bd-text-12 {
+    color: var(--chillout-links);
+}
 
 .container__33507 {
     background-color: var(--color-textbg);
@@ -1061,6 +1129,13 @@
     fill: var(--color-text) !important;
 }
 
+/*Text in descriptions*/
+.bd-description {
+    color: var(--color-text) !important;
+}
+
+/*----------Plugins-------------*/
+
 /*Addoncards*/
 .bd-addon-card {
     clip-path: var(--chillout-hexagon-bighigh);
@@ -1098,27 +1173,6 @@
 .repoHeader_2KfNvH {
     background-color: var(--background-tertiary);
 }
-
-/*Theme & Plugin-Repo*/
-.tabBarItem_b9fccc.item_b3f026.themed_b3f026 {
-    clip-path: unset;
-}
-
-.flexChild__7c0ba.container_a45028.small_a45028 {
-    clip-path: var(--chillout-hexagon-longselection);
-    background-color: var(--color-textbg);
-}
-
-.flexChild__7c0ba.container_a45028.small_a45028 .inner_a45028 {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.button__201d5.lookFilled__201d5.colorBrand__201d5.sizeTiny__201d5.grow__201d5 {
-    background-color: var(--chillout-links);
-    clip-path: var(--chillout-hexagon-longselection);
-}
-
 
 /*Edit users*/
 .flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignCenter_abf706.noWrap_abf706.header__49fc1.hasSiblings_fRyjyl,
@@ -1228,18 +1282,32 @@
 }
 
 .gameActivityToggleAdded_Yd-YxC .avatarWrapper__37e49 .nameTag__37e49 {
-    position: absolute !important;
-    margin-top: -13% !important;
-    margin-left: 30% !important;
+    margin-left: 23% !important;
 }
 
-.panels_c48ade .container__37e49.gameActivityToggleAdded_Yd-YxC .buttons__37e49 {
-    left: -10% !important;
+.gameActivityToggleAdded_Yd-YxC .buttons__37e49 {
+    gap: 10px;
 }
+
+.gameActivityToggleAdded_Yd-YxC .buttons__37e49 .gameActivityToggleButton_Yd-YxC {
+    margin-left: 10% !important;
+}
+
+.gameActivityToggleAdded_Yd-YxC .buttons__37e49 .micButtonParent__37e49 {
+    margin-left: 34% !important;
+}
+
 
 /*----------Themes-------------*/
 
-
+/*ChilloutVR*/
+#ChilloutVR-card .bd-description-wrap {
+    background-image: url(https://gamefabrique.com/i/pc/chilloutvr.jpg);
+    background-size: cover !important;
+    background-position: center;
+    background-blend-mode: hue;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 /*---------------------------------------Vencord-------------------------------------------*/
 
