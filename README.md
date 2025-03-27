@@ -1,5 +1,3 @@
-# BROKEN caused by Discords css update!!!
-
 # ChilloutVR Inspired Discord Theme
 
 This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutVR user interface. It provides a dark, relaxing, and immersive user interface for Discord.
@@ -11,7 +9,9 @@ This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutV
 
 The min-theme.css is only updated when fixes on theme.css are confirmed and without issues.
 
-## Installation - Windows
+
+## Installation - Windows ![Win11-64](https://github.com/user-attachments/assets/7d608b92-8bc6-45d6-a612-3cb2c54a1594)
+
 
 ### BetterDiscord
 
@@ -27,9 +27,21 @@ The min-theme.css is only updated when fixes on theme.css are confirmed and with
 3. Copy the `.theme.css` file into your Vencord themes folder. (it is in %appdata%/Vencord/Themes)
 4. Enable the theme in your Theme settings.
 
-## Installation - Linux
 
-## Installation - MacOS
+## Installation - Linux ![Linux64x64](https://github.com/user-attachments/assets/7e3757a8-7b79-43e5-9a46-7c8a9e9bc527)
+
+
+### BetterDiscord
+
+### Vencord
+
+
+## Installation - MacOS ![Apple 64x64](https://github.com/user-attachments/assets/3373dc6e-46e0-4c36-91b3-fc68ab354903)
+
+
+### BetterDiscord
+
+### Vencord
 
 
 ## Known issues - BetterDiscord
