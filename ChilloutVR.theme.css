@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.2
+ * @version 0.8.3
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -1326,7 +1326,8 @@
 /*----------Themes-------------*/
 
 /*ChilloutVR*/
-#ChilloutVR-card .bd-description-wrap {
+#ChilloutVR-card .bd-description-wrap,
+#ChilloutVR-minified-card .bd-description-wrap {
     background-image: url(https://gamefabrique.com/i/pc/chilloutvr.jpg);
     background-size: cover !important;
     background-position: center;
