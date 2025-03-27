@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.0
+ * @version 0.8.1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -30,7 +30,7 @@
  */
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
-/*@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");*/
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 
 :root {
     --ChilloutSymbol: url(https://cdn.discordapp.com/icons/410126604237406209/a_036f7da558dc12fa8ef5a314c2e80564.webp);
@@ -401,6 +401,10 @@
 }
 
 /*user area*/
+.panels_c48ade {
+    /*border: none !important;*/
+    clip-path: var(--chillout-hexagon-bighigh);
+}
 
 .container__37e49 {
     background-color: var(--background-tertiary) !important;
@@ -626,8 +630,8 @@
 
 /*add friend button*/
 .item__133bf.addFriend__133bf.item_b3f026.themed_b3f026 {
-    background-color: var(--chillout-links);
     clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links) !important;
 }
 
 /*Add friend search bar*/
@@ -694,8 +698,9 @@
 }
 
 .itemCard__7e549 {
-    background-color: var(--color-textbg);
+    background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-high);
+    border: none;
 }
 
 .itemCard__7e549 div .body__00943 {
@@ -915,7 +920,7 @@
 /*channel list & banner*/
 .container_c8ffbb,
 .header_f37cb1 {
-    background-color: var(--background-tertiary);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .container_f37cb1 {
@@ -985,6 +990,32 @@
     background-color: var(--chillout-links);
 }
 
+/*Chats*/
+/*Files*/
+.file__0ccae {
+    background-color: var(--color-textbg) !important;
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
+.fileNameLink__0ccae {
+    color: var(--chillout-links) !important;
+    font-weight: bold;
+}
+
+.fileInner__0ccae div {
+    color: var(--color-text) !important;
+}
+
+/*Follow channel*/
+.wrapper__44df5 {
+    background-color: var(--color-textbg) !important;
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
+.buttonContainer__44df5 button {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links) !important;
+}
 
 /*-----------------------------------------Calls-------------------------------------------*/
 .headerWrapper_cb9592 {
@@ -1288,12 +1319,9 @@
 }
 
 .gameActivityToggleAdded_Yd-YxC .buttons__37e49 .gameActivityToggleButton_Yd-YxC {
-    margin-left: 10% !important;
+    margin-left: 350% !important;
 }
 
-.gameActivityToggleAdded_Yd-YxC .buttons__37e49 .micButtonParent__37e49 {
-    margin-left: 34% !important;
-}
 
 
 /*----------Themes-------------*/
