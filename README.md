@@ -2,8 +2,8 @@
 
 This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutVR user interface. It provides a dark, relaxing, and immersive user interface for Discord.
 
-![image](https://github.com/user-attachments/assets/23d6192e-a560-40c4-a0f2-9273f0b1da8b)
-(outdated - waiting for finished version)
+![image](https://github.com/user-attachments/assets/019f5dea-cc53-445d-b027-af4283ba13f6)
+
 
 ## Important information
 
@@ -51,14 +51,10 @@ The min-theme.css is only updated when fixes on theme.css are confirmed and with
 
 1. auto-update doesnt work - Theme currently not commited to BetterDiscord website.
 2. resizing sidebar causes user area to break
-3. minimized version broken! (use 0.8.0 or above)
-4. GameActivityToggle Button not working (fixed in 0.8.1 or above)
-5. Horizontal Server list currently not working: waiting for update
 
 ## Known issues - Vencord
 
 1. Cause this theme is created with BetterDiscord it has some design issues in Vencord. Buttons are not having the right clip path or get to multiline. If you have some issues that makes Vencord unusable create an issue for me. Else I'll try my best to make it as good as possible for both clients.
-2. Horizontal Server list currently not working: waiting for update
 
 
 ## Customization
