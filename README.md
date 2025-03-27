@@ -11,24 +11,33 @@ This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutV
 
 The min-theme.css is only updated when fixes on theme.css are confirmed and without issues.
 
-## Installation - BetterDiscord
+## Installation - Windows
+
+### BetterDiscord
 
 1. Ensure you have BetterDiscord installed.
 2. Copy or download this file: `https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/ChilloutVR.theme.css`
 3. Copy the `.theme.css` file into your BetterDiscord themes folder. (it is in %appdata%/BetterDiscord/Themes)
 4. Enable the theme in your BetterDiscord settings.
 
-## Installation - Vencord
+### Vencord
 
 1. Ensure you have Vencord installed.
 2. Copy or download this file: `https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/ChilloutVR.theme.css`
 3. Copy the `.theme.css` file into your Vencord themes folder. (it is in %appdata%/Vencord/Themes)
 4. Enable the theme in your Theme settings.
 
+## Installation - Linux
+
+## Installation - MacOS
+
+
 ## Known issues - BetterDiscord
 
 1. auto-update doesnt work - Theme currently not commited to BetterDiscord website.
 2. resizing sidebar causes user area to break
+3. minimized version broken! (use 0.8.0 or above)
+4. GameActivityToggle Button not working (fixed in 0.8.1 or above)
 
 ## Known issues - Vencord
 
