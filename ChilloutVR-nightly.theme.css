@@ -1,12 +1,12 @@
 /**
- * @name ChilloutVR-nightly
+ * @name ChilloutVR
  * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.4
+ * @version 0.8.4-2
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -357,7 +357,7 @@
 }
 
 /*search bar*/
-.searchBarComponent__35e86 {
+.searchBar__35e86 button {
     color: var(--color-text) !important;
     background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-longselection);
