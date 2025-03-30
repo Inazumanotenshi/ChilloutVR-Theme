@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.4-3
+ * @version 0.8.4-4
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -1061,18 +1061,6 @@
 
 .experimentWrapper__1405b div .attachedCaretButtonContainer_f1ceac div .staticButton_f1ceac {
     clip-path: var(--chillout-hexagon-high) !important;
-}
-
-/*Popups*/
-.focusLock__49fc1,
-.modal_6GHvdM {
-    clip-path: var(--chillout-hexagon-bighigh);
-    border: none !important;
-}
-
-.content__49fc1,
-.header__49fc1 {
-    background-color: var(--background-tertiary) !important;
 }
 
 /*-------------------------------------BetterDiscord---------------------------------------*/
