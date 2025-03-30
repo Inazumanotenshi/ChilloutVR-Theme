@@ -1,14 +1,14 @@
 /**
- * @name ChilloutVR
+ * @name ChilloutVR-nightly
  * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.4-2
+ * @version 0.8.4-3
  * @authorLink https://github.com/Inazumanotenshi/
- * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
+ * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
  * @website https://blankinternational.com
  *
@@ -1008,6 +1008,16 @@
     background-color: var(--chillout-links) !important;
 }
 
+/*Right click menu*/
+.menu_c1e9c4 {
+    clip-path: var(--chillout-hexagon-bighigh);
+    border: none;
+}
+
+.menu_c1e9c4 .scroller_c1e9c4 {
+    background-color: var(--color-textbg) !important;
+}
+
 /*-----------------------------------------Calls-------------------------------------------*/
 .headerWrapper_cb9592 {
     background-color: var(--background-tertiary) !important;
@@ -1053,6 +1063,17 @@
     clip-path: var(--chillout-hexagon-high) !important;
 }
 
+/*Popups*/
+.focusLock__49fc1,
+.modal_6GHvdM {
+    clip-path: var(--chillout-hexagon-bighigh);
+    border: none !important;
+}
+
+.content__49fc1,
+.header__49fc1 {
+    background-color: var(--background-tertiary) !important;
+}
 
 /*-------------------------------------BetterDiscord---------------------------------------*/
 
@@ -1121,8 +1142,21 @@
     fill: var(--color-text) !important;
 }
 
-.close__49fc1 {
-    background-color: var(--color-textbg) !important;
+.close__49fc1.button__201d5 {
+    clip-path: var(--chillout-hexagon-default);
+    background-color: var(--color-text);
+}
+
+.close__49fc1.button__201d5 svg path {
+    fill: var(--background-tertiary) !important;
+}
+
+.close__49fc1.button__201d5:hover {
+    clip-path: var(--chillout-hexagon-default);
+    background-color: var(--chillout-links);
+}
+
+.close__49fc1.button__201d5:hover svg path {
     fill: var(--color-text) !important;
 }
 
@@ -1313,6 +1347,7 @@
     margin-left: 350% !important;
 }
 
+/*Server Details Plus*/
 
 
 /*----------Themes-------------*/
