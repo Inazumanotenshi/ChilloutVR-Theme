@@ -1,31 +1,27 @@
 /**
- * @name ChilloutVR-nightly
+ * @name ChilloutVR
  * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.4-4
+ * @version 0.8.4-5
  * @authorLink https://github.com/Inazumanotenshi/
- * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
+ * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
  * @website https://blankinternational.com
  *
  * supported Plugins
  * BetterDiscord
- *  BDFDB, EditUser, SpotifyControls, ShowAllActionButtons, AddReminder, GameActivityToggle
+ *  BDFDB, EditUser, SpotifyControls, ShowAllActionButtons, AddReminder, GameActivityToggle, Translate, PinDMs
  *
  * Vencord
- *  Default Units, EditUser, PinDMs, SpotifyControls, GameActivityToggle
+ *  Default Units, EditUser, PinDMs, SpotifyControls, GameActivityToggle, ServerListIndicator, Vencord Toolbox, Translate, PinDMs
  *
  *
  * supported Themes
- *  BetterDiscord
  *  AMOLED-Cord
- *
- * Vencord
- *
  *
  */
 
@@ -150,6 +146,11 @@
 .item_b3f026 {
     color: var(--color-text) !important;
     clip-path: var(--chillout-hexagon-longselection);
+}
+
+/*Disable Clippath on Tab in setting*/
+.tabBarItem_d6f9e9 {
+    clip-path: unset;
 }
 
 /*parts that are not alligned to left*/
@@ -1373,6 +1374,36 @@
 }
 
 /*----------Plugins-------------*/
+/*Default Units*/
+-vc-plugins-info-card {
+    clip-path: var(--chillout-hexagon-bighigh);
+    border: none;
+    background-color: var(--color-textbg);
+}
 
+.vc-plugins-grid .vc-addon-card {
+    clip-path: var(--chillout-hexagon-bighigh);
+    border: none !important;
+    background-color: var(--color-textbg) !important;
+}
+
+/*VencordToolbox*/
+.vc-toolbox-btn svg path {
+    fill: var(--chillout-links) !important;
+}
+
+/*WhoReacted*/
+.clickableAvatar__183c2 {
+    clip-path: var(--chillout-hexagon-default);
+}
 
 /*----------Themes-------------*/
+
+/*ChilloutVR*/
+.vc-settings-theme-grid .vc-addon-card {
+    clip-path: var(--chillout-hexagon-bighigh);
+    border: none !important;
+    background-image: url(https://gamefabrique.com/i/pc/chilloutvr.jpg);
+    background-size: cover !important;
+    background-position: -5px;
+}
