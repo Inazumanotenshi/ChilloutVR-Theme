@@ -45,7 +45,7 @@ The min-theme.css is only updated when fixes on theme.css are confirmed and with
 ### ![ODLS](https://github.com/user-attachments/assets/c6106a4d-155f-4f54-85ca-09232ae45576) BetterDiscord
 
 1. Ensure you have BetterDiscord installed.
-2. Copy or download this file: https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/ChilloutVR.theme.css
+2. Copy or download this file: `https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/ChilloutVR.theme.css`
 3. Press "open Themes Folder" in BetterDiscord Theme section.
 4. Copy the .theme.css file into your BetterDiscord themes folder.
 5. Enable the theme in your BetterDiscord settings.
@@ -53,7 +53,7 @@ The min-theme.css is only updated when fixes on theme.css are confirmed and with
 ### ![Vencord](https://github.com/user-attachments/assets/6ccb778a-25ea-4d84-8754-4fa45af2211c) Vencord
 
 1. Ensure you have BetterDiscord installed.
-2. Copy or download this file: https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/ChilloutVR.theme.css
+2. Copy or download this file: `https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/ChilloutVR.theme.css`
 3. Press "open Themes Folder" in Vencord Theme section.
 4. Copy the .theme.css file into your Vencord themes folder.
 5. Enable the theme in your Vencord settings (restart may required).
