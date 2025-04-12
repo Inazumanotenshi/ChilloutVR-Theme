@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.4-5
+ * @version 0.8.5
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -1318,21 +1318,21 @@
 }
 
 /*GameActivityToggle*/
-.gameActivityToggleAdded_Yd-YxC {
+.gameActivityToggleAdded_fd3fb5 {
     background-color: var(--background-tertiary) !important;
     height: var(--userareaheight);
     display: block;
 }
 
-.gameActivityToggleAdded_Yd-YxC .avatarWrapper__37e49 .nameTag__37e49 {
+.gameActivityToggleAdded_fd3fb5 .avatarWrapper__37e49 .nameTag__37e49 {
     margin-left: 23% !important;
 }
 
-.gameActivityToggleAdded_Yd-YxC .buttons__37e49 {
+.gameActivityToggleAdded_fd3fb5 .buttons__37e49 {
     gap: 10px;
 }
 
-.gameActivityToggleAdded_Yd-YxC .buttons__37e49 .gameActivityToggleButton_Yd-YxC {
+.gameActivityToggleAdded_fd3fb5 .buttons__37e49 .gameActivityToggleButton_fd3fb5 {
     margin-left: 350% !important;
 }
 
@@ -1375,7 +1375,7 @@
 
 /*----------Plugins-------------*/
 /*Default Units*/
--vc-plugins-info-card {
+.vc-plugins-info-card {
     clip-path: var(--chillout-hexagon-bighigh);
     border: none;
     background-color: var(--color-textbg);
