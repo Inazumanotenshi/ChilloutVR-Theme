@@ -6,9 +6,9 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.5
+ * @version 0.8.5-1
  * @authorLink https://github.com/Inazumanotenshi/
- * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
+ * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
  * @website https://blankinternational.com
  *
@@ -892,6 +892,12 @@
     clip-path: var(--chillout-hexagon-bighigh);
 }
 
+/*right click menu*/
+.clickTrapContainer_da8173 div {
+    z-index: 1 !important;   
+    overflow: visible !important;
+}
+
 
 /*----------------------------------------Server---------------------------------------------*/
 
@@ -1011,12 +1017,13 @@
 
 /*Right click menu*/
 .menu_c1e9c4 {
-    clip-path: var(--chillout-hexagon-bighigh);
-    border: none;
+    /*clip-path: var(--chillout-hexagon-bighigh) !important;*/
+    overflow: visible !important;
 }
 
 .menu_c1e9c4 .scroller_c1e9c4 {
     background-color: var(--color-textbg) !important;
+    border: none;
 }
 
 /*-----------------------------------------Calls-------------------------------------------*/
@@ -1175,6 +1182,10 @@
 /*Text in descriptions*/
 .bd-description {
     color: var(--color-text) !important;
+}
+
+.bd-button-color-red {
+    clip-path: var(--chillout-hexagon-longselection);
 }
 
 /*----------Plugins-------------*/
