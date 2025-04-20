@@ -1,14 +1,14 @@
 /**
- * @name ChilloutVR-nightly
+ * @name ChilloutVR
  * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.5-3
+ * @version 0.8.5-4
  * @authorLink https://github.com/Inazumanotenshi/
- * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
+ * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
  * @website https://blankinternational.com
  *
@@ -1239,31 +1239,31 @@
 }
 
 /*Spotify Controls*/
-.song_tIdBpF {
+.song_791eb8 {
     color: var(--chillout-links);
 }
 
-.interpret_F93iqP {
-    color: var(--color-text);
+.interpret_791eb8 {
+    color: var(--color-text) !important;
 }
 
-.cover_SwJ-ck {
+.cover_791eb8 {
     clip-path: var(--chillout-hexagon-default);
 }
 
-.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 .button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 div {
+.flexHorizontal__2d3fe .button__67645.enabled__67645.button__201d5 div {
     color: var(--color-text);
 }
 
-.bar_g2ZMIm {
+.bar_791eb8 {
     background-color: var(--color-textbg) !important;
 }
 
-.barFill_Dhkah7 {
+.barFill_791eb8 {
     background-color: var(--chillout-links) !important;
 }
 
-.barText_lmqc5O div {
+.barText_791eb8 div {
     color: var(--color-text);
 }
 
