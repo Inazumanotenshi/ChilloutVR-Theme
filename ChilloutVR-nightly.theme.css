@@ -1,12 +1,12 @@
 /**
- * @name ChilloutVR
+ * @name ChilloutVR-nightly
  * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.5-4
+ * @version 0.8.5-5
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -27,6 +27,7 @@
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
 @import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');
+
 
 :root {
 
@@ -392,11 +393,39 @@
     background-color: var(--background-tertiary) !important;
 }
 
+.rtcConnectionStatusWrapper__06d62 {
+    max-width: 75%;
+    overflow: visible;
+}
+
 /*user area*/
+/*voice activity*/
+.wrapper_e131a9 {
+    background-color: var(--background-tertiary);
+}
+
 .panels_c48ade {
     /*border: none !important;*/
     clip-path: var(--chillout-hexagon-bighigh);
 }
+
+.panels_c48ade:hover {
+    clip-path: none;
+    transition: clip-path 0.3s ease; /* Sanfter Übergang */
+}
+
+
+.contentWrapper__0d616:hover {
+    height: auto; /* Passt die Größe automatisch an */
+    transition: height 0.3s ease; /* Sanfter Übergang */
+}
+
+.contentWrapper__0d616 {
+    display: flex;
+    flex-wrap: wrap; /* Inhalte umbrechen, falls nötig */
+    justify-content: center; /* Zentriere den Inhalt */
+}
+
 
 .container__37e49 {
     background-color: var(--background-tertiary) !important;
@@ -408,7 +437,6 @@
 /*username and pic align with buttons*/
 .avatarWrapper__37e49 {
     display: flex !important;
-    height: 100% !important;
 }
 
 /*user profile picture*/
@@ -428,6 +456,7 @@
 .hovered__0263c,
 .subtext__339d0 {
     color: var(--color-text);
+    overflow: hidden;
 }
 
 /*Toggle buttons in user area*/
@@ -1239,6 +1268,10 @@
 }
 
 /*Spotify Controls*/
+.container_791eb8 {
+    background-color: var(--background-tertiary);
+}
+
 .song_791eb8 {
     color: var(--chillout-links);
 }
