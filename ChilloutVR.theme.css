@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.4
+ * @version 0.8.5
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -27,6 +27,7 @@
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
 @import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');
+
 
 :root {
 
@@ -392,11 +393,39 @@
     background-color: var(--background-tertiary) !important;
 }
 
+.rtcConnectionStatusWrapper__06d62 {
+    max-width: 75%;
+    overflow: visible;
+}
+
 /*user area*/
+/*voice activity*/
+.wrapper_e131a9 {
+    background-color: var(--background-tertiary);
+}
+
 .panels_c48ade {
     /*border: none !important;*/
     clip-path: var(--chillout-hexagon-bighigh);
 }
+
+.panels_c48ade:hover {
+    clip-path: none;
+    transition: clip-path 0.3s ease; /* Sanfter Übergang */
+}
+
+
+.contentWrapper__0d616:hover {
+    height: auto; /* Passt die Größe automatisch an */
+    transition: height 0.3s ease; /* Sanfter Übergang */
+}
+
+.contentWrapper__0d616 {
+    display: flex;
+    flex-wrap: wrap; /* Inhalte umbrechen, falls nötig */
+    justify-content: center; /* Zentriere den Inhalt */
+}
+
 
 .container__37e49 {
     background-color: var(--background-tertiary) !important;
@@ -408,7 +437,6 @@
 /*username and pic align with buttons*/
 .avatarWrapper__37e49 {
     display: flex !important;
-    height: 100% !important;
 }
 
 /*user profile picture*/
@@ -428,13 +456,14 @@
 .hovered__0263c,
 .subtext__339d0 {
     color: var(--color-text);
+    overflow: hidden;
 }
 
 /*Toggle buttons in user area*/
 .panels_c48ade .container__37e49 .buttons__37e49 {
     position: absolute;
     margin-top: 10% !important;
-    left: 22% !important;
+    left: 23% !important;
 }
 
 .micButtonParent__37e49 {
@@ -794,6 +823,11 @@
     color: var(--color-text);
 }
 
+/*edit message*/
+.channelTextArea__5126c {
+    border: none;
+}
+
 /*@persons*/
 .autocomplete__13533 {
     clip-path: var(--chillout-hexagon-high);
@@ -892,7 +926,6 @@
     clip-path: var(--chillout-hexagon-bighigh);
 }
 
-
 /*----------------------------------------Server---------------------------------------------*/
 
 /*Commit Buttons*/
@@ -916,7 +949,7 @@
 }
 
 .container_f37cb1 {
-    z-index: 3 !important;
+    z-index: 99;
 }
 
 .animatedContainer_f37cb1 {
@@ -930,7 +963,6 @@
 
 .scroller__629e4 {
     background-color: var(--background-tertiary);
-    z-index: 2 !important;
 }
 
 /*channels*/
@@ -1011,12 +1043,13 @@
 
 /*Right click menu*/
 .menu_c1e9c4 {
-    clip-path: var(--chillout-hexagon-bighigh);
-    border: none;
+    /*clip-path: var(--chillout-hexagon-bighigh) !important;*/
+    overflow: visible !important;
 }
 
 .menu_c1e9c4 .scroller_c1e9c4 {
     background-color: var(--color-textbg) !important;
+    border: none;
 }
 
 /*-----------------------------------------Calls-------------------------------------------*/
@@ -1177,6 +1210,10 @@
     color: var(--color-text) !important;
 }
 
+.bd-button-color-red {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
 /*----------Plugins-------------*/
 
 /*Addoncards*/
@@ -1240,31 +1277,35 @@
 }
 
 /*Spotify Controls*/
-.song_tIdBpF {
+.container_791eb8 {
+    background-color: var(--background-tertiary);
+}
+
+.song_791eb8 {
     color: var(--chillout-links);
 }
 
-.interpret_F93iqP {
-    color: var(--color-text);
+.interpret_791eb8 {
+    color: var(--color-text) !important;
 }
 
-.cover_SwJ-ck {
+.cover_791eb8 {
     clip-path: var(--chillout-hexagon-default);
 }
 
-.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 .button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 div {
+.flexHorizontal__2d3fe .button__67645.enabled__67645.button__201d5 div {
     color: var(--color-text);
 }
 
-.bar_g2ZMIm {
+.bar_791eb8 {
     background-color: var(--color-textbg) !important;
 }
 
-.barFill_Dhkah7 {
+.barFill_791eb8 {
     background-color: var(--chillout-links) !important;
 }
 
-.barText_lmqc5O div {
+.barText_791eb8 div {
     color: var(--color-text);
 }
 
@@ -1318,21 +1359,21 @@
 }
 
 /*GameActivityToggle*/
-.gameActivityToggleAdded_Yd-YxC {
+.gameActivityToggleAdded_fd3fb5 {
     background-color: var(--background-tertiary) !important;
     height: var(--userareaheight);
     display: block;
 }
 
-.gameActivityToggleAdded_Yd-YxC .avatarWrapper__37e49 .nameTag__37e49 {
+.gameActivityToggleAdded_fd3fb5 .avatarWrapper__37e49 .nameTag__37e49 {
     margin-left: 23% !important;
 }
 
-.gameActivityToggleAdded_Yd-YxC .buttons__37e49 {
+.gameActivityToggleAdded_fd3fb5 .buttons__37e49 {
     gap: 10px;
 }
 
-.gameActivityToggleAdded_Yd-YxC .buttons__37e49 .gameActivityToggleButton_Yd-YxC {
+.gameActivityToggleAdded_fd3fb5 .buttons__37e49 .gameActivityToggleButton_fd3fb5 {
     margin-left: 350% !important;
 }
 
@@ -1353,7 +1394,8 @@
 }
 
 /*Horizontal Server list*/
-.expandedFolderBackground__48112 {
+.expandedFolderBackground__48112,
+.folderGroupBackground__48112 {
     border-radius: unset !important;
     background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-high) !important;
@@ -1375,7 +1417,7 @@
 
 /*----------Plugins-------------*/
 /*Default Units*/
--vc-plugins-info-card {
+.vc-plugins-info-card {
     clip-path: var(--chillout-hexagon-bighigh);
     border: none;
     background-color: var(--color-textbg);
