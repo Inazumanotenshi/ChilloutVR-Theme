@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.5
+ * @version 0.8.6
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -34,7 +34,7 @@
     --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
     --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
 
-    --ChilloutSymbol: url(https://cdn.discordapp.com/icons/410126604237406209/a_036f7da558dc12fa8ef5a314c2e80564.webp);
+    --ChilloutSymbol: url(https://cdn.discordapp.com/icons/410126604237406209/a_ac2c3e059c7aa97c78248dc5fc612fea.gif?size=80&quality=lossless);
     --chillout-hexagon-default: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
     --chillout-hexagon-hover: polygon(23.25% 0%, 69.75% 0%, 93% 43.3%, 69.75% 86.6%, 23.25% 86.6%, 0% 50%);
     --chillout-hexagon-folder: polygon(20% 6.7%, 80% 6.7%, 100% 50%, 80% 93.3%, 20% 93.3%, 0% 50%);
@@ -322,17 +322,14 @@
     content: unset !important;
 }
 
-/*Todo*/
-/*opened server folder*/
-
-
 /*dms & server in folder*/
 .icon__6e9f8 {
     clip-path: var(--chillout-hexagon-default);
 }
 
 /*server folder*/
-.folderIconWrapper__48112 {
+.folderIconWrapper__48112,
+.folderPreviewWrapper__48112 {
     clip-path: var(--chillout-hexagon-default);
 }
 
@@ -1097,6 +1094,41 @@
     clip-path: var(--chillout-hexagon-high) !important;
 }
 
+/*-----------------------------------Image actions----------------------------------*/
+.actionButtons_cc1819 {
+    background-color: var(--color-textbg) !important;
+    clip-path: var(--chillout-hexagon-high);
+    border: none;
+}
+
+.button_aec7ab.closeButton__6088c {
+    background-color: var(--chillout-links) !important;
+    clip-path: var(--chillout-hexagon-default);
+}
+
+.button_aec7ab.closeButton__6088c div svg path {
+    fill: var(--color-text);
+}
+
+.button_aec7ab.closeButton__6088c:hover {
+    background-color: var(--color-text) !important;
+}
+
+.button_aec7ab.closeButton__6088c:hover div svg path {
+    fill: var(--chillout-links);
+}
+
+.nav_b2eddf {
+    clip-path: var(--chillout-hexagon-default);
+    background-color: var(--color-textbg) !important;
+    border: none;
+}
+
+.nav_b2eddf div svg path {
+    fill: var(--color-text);
+}
+
+
 /*-------------------------------------BetterDiscord---------------------------------------*/
 
 /*Update note*/
@@ -1322,42 +1354,6 @@
     font-family: "Arial Narrow", "Courier New", monospace !important;
 }
 
-/*Reminder*/
-.reminder-button {
-    background-color: var(--color-textbg) !important;
-    clip-path: var(--chillout-hexagon-longselection) !important;
-    color: var(--color-text) !important;
-}
-
-.bd-modal-root.bd-modal-small {
-    clip-path: var(--chillout-hexagon-bighigh);
-    background-color: var(--background-tertiary);
-}
-
-.bd-modal-footer {
-    background-color: var(--background-tertiary);
-}
-
-#reminderText,
-#reminderText::placeholder,
-#reminderTime,
-.bd-modal-content.bd-scroller-base.bd-scroller-thin div button{
-    clip-path: var(--chillout-hexagon-longselection);
-    background-color: var(--color-textbg) !important;
-    color: var(--color-text) !important;
-}
-
-.bd-button.bd-button-filled.bd-button-color-brand.bd-button-medium.bd-button-grow {
-    background-color: var(--chillout-links);
-    clip-path: var(--chillout-hexagon-longselection);
-}
-
-.bd-button.bd-button-link.bd-button-color-primary.bd-button-medium.bd-button-grow {
-    background-color: var(--color-textbg);
-    clip-path: var(--chillout-hexagon-longselection);   
-    margin-right: 5px; 
-}
-
 /*GameActivityToggle*/
 .gameActivityToggleAdded_fd3fb5 {
     background-color: var(--background-tertiary) !important;
@@ -1403,6 +1399,9 @@
 
 /*---------------------------------------Vencord-------------------------------------------*/
 
+/*----------Plugins-------------*/
+
+/*Default Units*/
 .vc-settings-tab-bar-item {
     clip-path: none !important;
 }
@@ -1415,17 +1414,27 @@
     clip-path: var(--chillout-hexagon-longselection);
 }
 
-/*----------Plugins-------------*/
-/*Default Units*/
 .vc-plugins-info-card {
     clip-path: var(--chillout-hexagon-bighigh);
     border: none;
     background-color: var(--color-textbg);
 }
 
+.vc-plugins-info-card,
+.vc-settings-card,
 .vc-plugins-grid .vc-addon-card {
     clip-path: var(--chillout-hexagon-bighigh);
     border: none !important;
+    background-color: var(--color-textbg) !important;
+}
+
+.vc-settings-quickActions-card {
+    border: none !important;
+    background-color: var(--background-tertiary) !important;
+}
+
+.vc-settings-quickActions-pill {
+    clip-path: var(--chillout-hexagon-high);
     background-color: var(--color-textbg) !important;
 }
 
