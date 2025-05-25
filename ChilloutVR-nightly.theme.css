@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.6-final
+ * @version 0.8.7 - Update 1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -1081,13 +1081,16 @@
 }
 
 /*Server call actions*/
-.experimentButtonSection__1405b {
-    clip-path: var(--chillout-hexagon-high);
+.buttonSection__1405b,
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac,
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac div,
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac div button {
+    clip-path: var(--chillout-hexagon-high) !important;
     background-color: var(--color-textbg) !important;
 }
 
-.experimentWrapper__1405b div .attachedCaretButtonContainer_f1ceac div .staticButton_f1ceac {
-    clip-path: var(--chillout-hexagon-high) !important;
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac div button div {
+    clip-path: unset !important;
 }
 
 /*-----------------------------------Image actions----------------------------------*/
