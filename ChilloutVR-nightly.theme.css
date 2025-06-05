@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.7 - Update 1
+ * @version 0.8.7 - Update 2
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -633,6 +633,11 @@
     color: var(--color-text);
 }
 
+/*Background of list*/
+.peopleColumn__133bf {
+    background-color: var(--background-tertiary);
+}
+
 .item__133bf.item_b3f026.selected_b3f026.themed_b3f026 {
     color: var(--chillout-links) !important;
 }
@@ -640,6 +645,7 @@
 /*Add friend area*/
 .addFriendInputWrapper__72ba7 {
     clip-path: var(--chillout-hexagon-bighigh);
+    background-color: var(--color-textbg);
 }
 
 /*add friend button*/
