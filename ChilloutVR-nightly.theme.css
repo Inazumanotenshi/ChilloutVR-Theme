@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.7 - Update 2
+ * @version 0.8.7
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -30,7 +30,7 @@
     --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
     --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
 
-    --ChilloutSymbol: url(https://cdn.discordapp.com/icons/410126604237406209/a_ac2c3e059c7aa97c78248dc5fc612fea.gif?size=80&quality=lossless);
+    --ChilloutSymbol: url(https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/CVRImage.png?raw=true);
     --chillout-hexagon-default: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
     --chillout-hexagon-hover: polygon(23.25% 0%, 69.75% 0%, 93% 43.3%, 69.75% 86.6%, 23.25% 86.6%, 0% 50%);
     --chillout-hexagon-folder: polygon(20% 6.7%, 80% 6.7%, 100% 50%, 80% 93.3%, 20% 93.3%, 0% 50%);
