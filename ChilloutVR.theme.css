@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.6
+ * @version 0.8.7
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -14,14 +14,10 @@
  *
  * supported Plugins
  * BetterDiscord
- *  BDFDB, EditUser, SpotifyControls, ShowAllActionButtons, AddReminder, GameActivityToggle, Translate, PinDMs
+ *  BDFDB, EditUser, SpotifyControls, ShowAllActionButtons, GameActivityToggle, Translate, PinDMs
  *
  * Vencord
  *  Default Units, EditUser, PinDMs, SpotifyControls, GameActivityToggle, ServerListIndicator, Vencord Toolbox, Translate, PinDMs
- *
- *
- * supported Themes
- *  AMOLED-Cord
  *
  */
 
@@ -34,7 +30,7 @@
     --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
     --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
 
-    --ChilloutSymbol: url(https://cdn.discordapp.com/icons/410126604237406209/a_ac2c3e059c7aa97c78248dc5fc612fea.gif?size=80&quality=lossless);
+    --ChilloutSymbol: url(https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/CVRImage.png?raw=true);
     --chillout-hexagon-default: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
     --chillout-hexagon-hover: polygon(23.25% 0%, 69.75% 0%, 93% 43.3%, 69.75% 86.6%, 23.25% 86.6%, 0% 50%);
     --chillout-hexagon-folder: polygon(20% 6.7%, 80% 6.7%, 100% 50%, 80% 93.3%, 20% 93.3%, 0% 50%);
@@ -637,6 +633,11 @@
     color: var(--color-text);
 }
 
+/*Background of list*/
+.peopleColumn__133bf {
+    background-color: var(--background-tertiary);
+}
+
 .item__133bf.item_b3f026.selected_b3f026.themed_b3f026 {
     color: var(--chillout-links) !important;
 }
@@ -644,6 +645,7 @@
 /*Add friend area*/
 .addFriendInputWrapper__72ba7 {
     clip-path: var(--chillout-hexagon-bighigh);
+    background-color: var(--color-textbg);
 }
 
 /*add friend button*/
@@ -1085,13 +1087,16 @@
 }
 
 /*Server call actions*/
-.experimentButtonSection__1405b {
-    clip-path: var(--chillout-hexagon-high);
+.buttonSection__1405b,
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac,
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac div,
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac div button {
+    clip-path: var(--chillout-hexagon-high) !important;
     background-color: var(--color-textbg) !important;
 }
 
-.experimentWrapper__1405b div .attachedCaretButtonContainer_f1ceac div .staticButton_f1ceac {
-    clip-path: var(--chillout-hexagon-high) !important;
+.buttonSection__1405b .attachedCaretButtonContainer_f1ceac div button div {
+    clip-path: unset !important;
 }
 
 /*-----------------------------------Image actions----------------------------------*/
