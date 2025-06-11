@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.7
+ * @version 0.8.8
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -45,7 +45,6 @@
 
 .theme-dark {
     /*Theme specific*/
-    --background-tertiary: #292929;
     --color-text: #FFFF;
     --color-textbg: #5f5f5f;
     --chillout-links: #ff3c00;
@@ -55,7 +54,6 @@
 
 .theme-light {
     /*Theme specific*/
-    --background-tertiary: #FFFF;
     --color-text: #292929;
     --color-textbg: #9c9c9c;
     --chillout-links: #ff3c00;
