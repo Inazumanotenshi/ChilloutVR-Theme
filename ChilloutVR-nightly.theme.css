@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.8
+ * @version 0.8.9 - Preview 1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -343,10 +343,6 @@
 /*----------------------------------User side area-------------------------------------*/
 .privateChannels__35e86 {
     background-color: var(--background-tertiary);
-}
-
-.scroller__99e7c {
-    background-color: var(--background-tertiary) !important;
 }
 
 /*search bar*/
@@ -716,7 +712,7 @@
 }
 
 .itemCard__7e549 {
-    background-color: var(--color-textbg) !important;
+    background-color: var(--color-textbg);
     clip-path: var(--chillout-hexagon-high);
     border: none;
 }
@@ -1097,6 +1093,15 @@
     clip-path: unset !important;
 }
 
+/*-----------------------------------Activity Sidebar------------------------------*/
+.nowPlayingColumn__133bf .container__7d20c {
+    background-color: var(--background-tertiary) !important;
+}
+
+.itemCard__7e549 div .body__00943 {
+    background-color: var(--background-tertiary) !important;
+}
+
 /*-----------------------------------Image actions----------------------------------*/
 .actionButtons_cc1819 {
     background-color: var(--color-textbg) !important;
@@ -1247,6 +1252,30 @@
 
 .bd-button-color-red {
     clip-path: var(--chillout-hexagon-longselection);
+}
+
+/*PluginSettings*/
+.bd-text-input,
+.bd-slider-marker,
+.bd-slider-label {
+    color: var(--color-text);
+}
+
+.bd-slider-track {
+    background-image: linear-gradient(#ff3c00,#ff3c00);
+}
+
+.bd-button-color-brand.bd-button-medium {
+    background-color: var(--chillout-links);
+    color: var(--color-text);
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.bd-number-input,
+.bd-text-input {
+    background-color: var(--color-textbg);
+    clip-path: var(--chillout-hexagon-longselection);
+    color: var(--color-text);
 }
 
 /*----------Plugins-------------*/
