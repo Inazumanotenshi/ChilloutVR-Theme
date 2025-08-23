@@ -3,10 +3,10 @@
  * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
-                https://abinteractive.net                                     
+                https://chilloutvr.net                                     
                 !other themes can make this break!
-                - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.9
+                - Sharing and upload allow by c ChilloutVR
+ * @version 0.8.10
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -304,10 +304,49 @@
     clip-path: var(--chillout-hexagon-default) !important;
 }
 
+/*-------------------------Shop area content---------------------------------------*/
+
+.heroHeaderButtonContainer__08415 button {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.heroHeaderButtonContainer__08415 button:hover {
+    background-color: var(--chillout-links);
+    color: var(--color-text);    
+}
+
+.cardText_c3d04b .detailsWrapper_c3d04b .innerHover_c3d04b .buttonsContainer_c3d04b button {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links);
+}
+
+.blockHeader__08415 button,
+.endOfFeed__08415 button {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links);
+    border: none !important;
+}
+
+.blockHeader__08415 button:hover,
+.endOfFeed__08415 button:hover {
+    background-color: var(--color-text);
+    color: var(--background-tertiary);
+}
+
+.featuredBlockButtonContainer__08415 button {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.featuredBlockButtonContainer__08415 button:hover {
+    background-color: var(--chillout-links);
+    color: var(--color-text);
+}
+
+
 /*-------------------------Server selection area---------------------------------------*/
 
 /*Discord Icon*/
-.wrapper__6e9f8[role="treeitem"] .childWrapper__6e9f8 {
+.tutorialContainer__1f388 .listItem__650eb .listItemWrapper__91816 .wrapper_cc5dd2 .svg_cc5dd2 foreignObject .wrapper__6e9f8[role="treeitem"] .childWrapper__6e9f8 {
     clip-path: var(--chillout-hexagon-default);
     content: var(--ChilloutSymbol);
 }
@@ -616,6 +655,13 @@
     background-color: var(--background-tertiary) !important;
 }
 
+/*start new conversation*/
+.createDMButtonContainer__35e86 .button__6af3a.sm__6af3a
+{
+    background-color: var(--chillout-links);
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
 /*header*/
 .theme_dark,
 .themed__9293f {
@@ -831,7 +877,7 @@
 }
 
 /*attach button*/
-.attachButtonInner__0923f svg path {
+.attachButtonInner__0923f svg path { 
     fill: var(--color-text) !important;
 }
 
