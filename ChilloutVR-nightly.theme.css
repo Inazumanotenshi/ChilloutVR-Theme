@@ -6,7 +6,7 @@
                 https://abinteractive.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c Alpha Blend Interactive
- * @version 0.8.10 - Preview 2
+ * @version 0.8.10
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -303,6 +303,45 @@
     color: var(--chillout-links);
     clip-path: var(--chillout-hexagon-default) !important;
 }
+
+/*-------------------------Shop area content---------------------------------------*/
+
+.heroHeaderButtonContainer__08415 button {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.heroHeaderButtonContainer__08415 button:hover {
+    background-color: var(--chillout-links);
+    color: var(--color-text);    
+}
+
+.cardText_c3d04b .detailsWrapper_c3d04b .innerHover_c3d04b .buttonsContainer_c3d04b button {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links);
+}
+
+.blockHeader__08415 button,
+.endOfFeed__08415 button {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links);
+    border: none !important;
+}
+
+.blockHeader__08415 button:hover,
+.endOfFeed__08415 button:hover {
+    background-color: var(--color-text);
+    color: var(--background-tertiary);
+}
+
+.featuredBlockButtonContainer__08415 button {
+    clip-path: var(--chillout-hexagon-longselection);
+}
+
+.featuredBlockButtonContainer__08415 button:hover {
+    background-color: var(--chillout-links);
+    color: var(--color-text);
+}
+
 
 /*-------------------------Server selection area---------------------------------------*/
 
@@ -838,7 +877,7 @@
 }
 
 /*attach button*/
-.attachButtonInner__0923f svg path {
+.attachButtonInner__0923f svg path { 
     fill: var(--color-text) !important;
 }
 
