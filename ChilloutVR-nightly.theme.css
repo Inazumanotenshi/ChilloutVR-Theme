@@ -3,10 +3,10 @@
  * @author Inazumanotenshi
  * @description A theme, based on the new web- & ui-design of ChilloutVR.        
                 Also dont forget to try the game out :D                                  
-                https://chilloutvr.net                                 
+                https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.8.11 - Preview 1
+ * @version 0.8.11 - Preview 2
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -656,7 +656,7 @@
 }
 
 /*start new conversation*/
-.createDMButtonContainer__35e86 .button__6af3a.sm__6af3a
+.createDMButtonContainer__35e86 .button_a22cb0.sm_a22cb0
 {
     background-color: var(--chillout-links);
     clip-path: var(--chillout-hexagon-longselection);
