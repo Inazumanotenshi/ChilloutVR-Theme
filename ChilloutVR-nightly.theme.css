@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.8.11 - Preview 2
+ * @version 0.8.11 - Preview 3
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -120,6 +120,11 @@
     background-color: var(--color-textbg);
 }
 
+.button_a22cb0.sm_a22cb0.primary_a22cb0 {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links);
+}
+
 /*replace Discord icon in symbol selection*/
 .appIconSelection__8a3d7 img[src="/assets/b17d7d96515d6d98856b.webp"] {
     content: var(--ChilloutSymbol);    
@@ -153,26 +158,26 @@
     margin-left: 0% !important;
 }
 
-/*CheckBoxes*/
-.container__87bf1 {
+/*CheckBoxes & Sliders*/
+.container__3f21e {
     clip-path: var(--chillout-hexagon-check) !important;
     color: var(--color-textbg);
 }
 
-.container__87bf1 .slider__87bf1 rect {
+.container__3f21e .slider__3f21e rect {
     clip-path: var(--chillout-hexagon-default);
     background: var(--color-text);
 }
 
-.slider__87bf1 svg {
+.slider__3f21e svg {
     display: none;
 }
 
-.checked__87bf1.container__87bf1 {
+.checked__3f21e.container__3f21e {
     background-color: var(--color-text) !important;
 }
 
-.checked__87bf1.container__87bf1 .slider__87bf1 rect {
+.checked__3f21e.container__3f21e .slider__3f21e rect {
     fill: var(--background-tertiary) !important;
     background-color: var(--background-tertiary) !important;
 }
@@ -223,11 +228,11 @@
 }
 
 /*Checkboxes*/
-.radioBar__001a7 div svg path {
+.radioBar__1bda4 div svg path {
     fill: var(--transparent);
 }
 
-.itemFilled__001a7 .radioBar__001a7 div svg {
+.itemFilled__1bda4 .radioBar__1bda4 div svg {
     border: var(--color-text) !important;
     border-color: var(--color-text) !important;
     border-style: solid !important;
@@ -315,7 +320,8 @@
     color: var(--color-text);    
 }
 
-.cardText_c3d04b .detailsWrapper_c3d04b .innerHover_c3d04b .buttonsContainer_c3d04b button {
+.cardText_c3d04b .detailsWrapper_c3d04b .innerHover_c3d04b .buttonsContainer_c3d04b button,
+.button_a22cb0.md_a22cb0.primary_a22cb0 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--chillout-links);
 }
