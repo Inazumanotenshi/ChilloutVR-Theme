@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.8.11 - Preview 3
+ * @version 0.8.11 - Preview 4
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -695,7 +695,7 @@
 }
 
 /*add friend button*/
-.item__133bf.addFriend__133bf.item_b3f026.themed_b3f026 {
+.item__133bf.addFriend__133bf.item_aa8da2.themed_aa8da2 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--chillout-links) !important;
 }
