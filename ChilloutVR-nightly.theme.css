@@ -491,12 +491,12 @@
     background-color: var(--background-tertiary);
 }
 
-.panels_c48ade {
+.panels__5e434 {
     /*border: none !important;*/
     clip-path: var(--chillout-hexagon-bighigh);
 }
 
-.panels_c48ade:hover {
+.panels__5e434:hover {
     clip-path: none;
     transition: clip-path 0.3s ease; /* Sanfter Übergang */
 }
@@ -547,7 +547,7 @@
 }
 
 /*Toggle buttons in user area*/
-.panels_c48ade .container__37e49 .buttons__37e49 {
+.panels__5e434 .container__37e49 .buttons__37e49 {
     position: absolute;
     margin-top: 10% !important;
     left: 23% !important;
