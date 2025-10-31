@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.8.10
+ * @version 0.8.11
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -22,7 +22,62 @@
  */
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
-@import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');
+/*@import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');*/
+
+.content__5e434 {
+    margin-top: var(--custom-guild-list-width);
+    overflow: visible !important;
+}
+
+#app-mount .sidebar__5e434 {
+    border-radius: 0;
+    overflow: visible !important;
+}
+
+#app-mount .guilds__5e434 {
+    transform-origin: top left;
+    rotate: -90deg;
+    height: 100vw !important;
+    bottom: unset;
+    position: absolute !important;
+    left: 0;
+}
+
+#app-mount .tree_ef3116 {
+    padding-top: var(--HSL-top-padding, var(--size-sm));
+}
+
+#app-mount .wrapper_cc5dd2 {
+    rotate: 90deg;
+}
+
+#app-mount .itemsContainer_ef3116,
+#app-mount .stack_dbd263 {
+    flex-direction: var(--HSL-server-direction);
+    justify-content: var(--HSL-server-alignment);
+}
+
+.container_c48ade > div[style]:not(.base_c48ade) {
+    width: 100vw !important;
+    height: var(--custom-guild-list-width) !important;
+    position: absolute;
+    top: calc(var(--custom-guild-list-width) + var(--custom-app-top-bar-height));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container_c48ade > div[style]:not(.base_c48ade) .guilds_c48ade {
+    pointer-events: all;
+}
+
+.container_c48ade > div[style]:not(.base_c48ade) + .base_c48ade .content__5e434 {
+    margin-top: calc(var(--custom-guild-list-width) * 2);
+}
+
+:root {
+    --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column /
+    --HSL-server-alignment: flex-start; / Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
+}
 
 
 :root {
@@ -120,6 +175,11 @@
     background-color: var(--color-textbg);
 }
 
+.button_a22cb0.sm_a22cb0.primary_a22cb0 {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--chillout-links);
+}
+
 /*replace Discord icon in symbol selection*/
 .appIconSelection__8a3d7 img[src="/assets/b17d7d96515d6d98856b.webp"] {
     content: var(--ChilloutSymbol);    
@@ -153,26 +213,26 @@
     margin-left: 0% !important;
 }
 
-/*CheckBoxes*/
-.container__87bf1 {
+/*CheckBoxes & Sliders*/
+.container__3f21e {
     clip-path: var(--chillout-hexagon-check) !important;
     color: var(--color-textbg);
 }
 
-.container__87bf1 .slider__87bf1 rect {
+.container__3f21e .slider__3f21e rect {
     clip-path: var(--chillout-hexagon-default);
     background: var(--color-text);
 }
 
-.slider__87bf1 svg {
+.slider__3f21e svg {
     display: none;
 }
 
-.checked__87bf1.container__87bf1 {
+.checked__3f21e.container__3f21e {
     background-color: var(--color-text) !important;
 }
 
-.checked__87bf1.container__87bf1 .slider__87bf1 rect {
+.checked__3f21e.container__3f21e .slider__3f21e rect {
     fill: var(--background-tertiary) !important;
     background-color: var(--background-tertiary) !important;
 }
@@ -223,11 +283,11 @@
 }
 
 /*Checkboxes*/
-.radioBar__001a7 div svg path {
+.radioBar__1bda4 div svg path {
     fill: var(--transparent);
 }
 
-.itemFilled__001a7 .radioBar__001a7 div svg {
+.itemFilled__1bda4 .radioBar__1bda4 div svg {
     border: var(--color-text) !important;
     border-color: var(--color-text) !important;
     border-style: solid !important;
@@ -315,7 +375,8 @@
     color: var(--color-text);    
 }
 
-.cardText_c3d04b .detailsWrapper_c3d04b .innerHover_c3d04b .buttonsContainer_c3d04b button {
+.cardText_c3d04b .detailsWrapper_c3d04b .innerHover_c3d04b .buttonsContainer_c3d04b button,
+.button_a22cb0.md_a22cb0.primary_a22cb0 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--chillout-links);
 }
@@ -430,12 +491,12 @@
     background-color: var(--background-tertiary);
 }
 
-.panels_c48ade {
+.panels__5e434 {
     /*border: none !important;*/
     clip-path: var(--chillout-hexagon-bighigh);
 }
 
-.panels_c48ade:hover {
+.panels__5e434:hover {
     clip-path: none;
     transition: clip-path 0.3s ease; /* Sanfter Übergang */
 }
@@ -467,8 +528,8 @@
 
 /*user profile picture*/
 .avatar__37e49 svg {
-    height: 200% !important;
-    margin-top: -35% !important;
+    height: 250% !important;
+    margin-top: -45% !important;
 }
 
 /*name and status*/
@@ -486,7 +547,7 @@
 }
 
 /*Toggle buttons in user area*/
-.panels_c48ade .container__37e49 .buttons__37e49 {
+.panels__5e434 .container__37e49 .buttons__37e49 {
     position: absolute;
     margin-top: 10% !important;
     left: 23% !important;
@@ -656,7 +717,7 @@
 }
 
 /*start new conversation*/
-.createDMButtonContainer__35e86 .button__6af3a.sm__6af3a
+.createDMButtonContainer__35e86 .button_a22cb0.sm_a22cb0
 {
     background-color: var(--chillout-links);
     clip-path: var(--chillout-hexagon-longselection);
@@ -689,7 +750,7 @@
 }
 
 /*add friend button*/
-.item__133bf.addFriend__133bf.item_b3f026.themed_b3f026 {
+.item__133bf.addFriend__133bf.item_aa8da2.themed_aa8da2 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--chillout-links) !important;
 }
@@ -1048,8 +1109,8 @@
     clip-path: var(--chillout-hexagon-longselection);
 }
 
-/*Bot text*/
-.botTag__5d473 {
+/*Bot/Official tag*/
+.botTag__82f07 {
     background-color: var(--chillout-links);
 }
 
