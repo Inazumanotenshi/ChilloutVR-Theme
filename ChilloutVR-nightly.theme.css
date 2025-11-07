@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.8.11
+ * @version 0.9.0 Preview 1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -150,27 +150,32 @@
     border: none !important;
 }
 
-.inner_fea832.thin_d125d2 {
+.container__0f084 {
     background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-longselection) !important;
 }
 
-.inner_fea832.thin_d125d2 .input_fea832 {
+.container__0f084 .input__0f084 {
     color: var(--color-text);
 }
 
-.inner_fea832.thin_d125d2 .input_fea832::placeholder {
+.container__0f084 .input__0f084::placeholder {
     color: var(--color-text);
 }
 
 /*selected tab*/
-.selected_b3f026::after {
+.selected_aa8da2::after {
     --selected-tab-item-color: var(--chillout-links) !important;
 }
 
+.tab_f8303a.selected_aa8da2 {    
+    color: var(--chillout-links) !important;
+    background-color: unset !important;
+}
+
 /*Buttons*/
-.button__201d5.lookOutlined__201d5,
-.fieldButton__1fed1.button__201d5 {
+.button_a22cb0.lookOutlined__201d5,
+.fieldButton__1fed1 .button_a22cb0 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--color-textbg);
 }
@@ -242,13 +247,22 @@
 }
 
 /*Selections*/
-.item__001a7 {
+.item_aa8da2.selected_aa8da2 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--color-textbg);
 }
 
-[role="radiogroup"] .item__001a7 {
+.item_aa8da2 {
+    clip-path: var(--chillout-hexagon-longselection);
+    color: var(--color-text) !important;
+}
+
+[role="radiogroup"] .item_aa8da2 {
     clip-path: var(--chillout-hexagon-high);
+}
+
+.headerText_aa8da2 {
+    color: var(--chillout-links);
 }
 
 .info__001a7 {
@@ -282,17 +296,32 @@
     margin-right: 5px !important;
 }
 
-/*Checkboxes*/
-.radioBar__1bda4 div svg path {
-    fill: var(--transparent);
+/*example in language selection*/
+.item__88a69.itemFilled__88a69 {
+    background-color: unset;
 }
 
-.itemFilled__1bda4 .radioBar__1bda4 div svg {
-    border: var(--color-text) !important;
+/*Checkboxes*/
+.radioIndicator__88a69 circle {
+    display: none;
+}
+
+.radioIndicatorGroup__88a69{
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 2px !important;
     border-color: var(--color-text) !important;
-    border-style: solid !important;
-    margin-left: 10px;
-    margin-top: 2px;
+}
+
+.radioIndicatorGroup__88a69 .radioIndicatorChecked__88a69 {
+    margin-left: -2px;
+    margin-top: -2px;
+    width: 50%;
+    height: 50%;
+    border: 10px solid;
+    border-radius: 2px !important;
+    border-color: var(--color-text) !important;
 }
 
 /*Todo inner Checkbox*/
@@ -1243,6 +1272,29 @@
     fill: var(--color-text);
 }
 
+/*-----------------------------------Voice Msgs actions----------------------------------*/
+.container_a8e786 {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--color-textbg);
+}
+
+.playButtonContainer_a8e786 {
+    clip-path: var(--chillout-hexagon-default);
+    background: var(--chillout-links);
+}
+
+.playButtonContainer_a8e786:hover {
+    background: var(--color-text) !important;
+}
+
+.playButtonContainer_a8e786:hover svg {
+    color: var(--chillout-links);
+}
+
+.playing_a8e786 {
+    background-color: var(--chillout-links) !important;
+}
+
 
 /*-------------------------------------BetterDiscord---------------------------------------*/
 
@@ -1383,6 +1435,16 @@
     background-color: var(--color-textbg);
     clip-path: var(--chillout-hexagon-longselection);
     color: var(--color-text);
+}
+
+.bd-select {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--color-textbg);
+}
+
+.bd-select.menu-open {
+    clip-path: unset;
+    background-color: var(--color-textbg);
 }
 
 /*----------Plugins-------------*/
