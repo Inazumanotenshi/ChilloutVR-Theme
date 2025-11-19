@@ -8,6 +8,7 @@ This repository contains a BetterDiscord/Vencord theme inspired by the ChilloutV
 ## Important information
 
 The min-theme.css is only updated when fixes on theme.css are confirmed and without issues.
+The plugin.js is currently only supported for BetterDiscord. Installation is the same like for other plugins.
 
 
 ## Installation - Windows ![Win11-64](https://github.com/user-attachments/assets/7d608b92-8bc6-45d6-a612-3cb2c54a1594)
