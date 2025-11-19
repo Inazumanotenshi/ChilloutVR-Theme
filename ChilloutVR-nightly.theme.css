@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.9.0 Preview 2
+ * @version 0.10.0 Preview 1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -145,6 +145,12 @@
 }
 
 /*-------------------------------------Settings----------------------------------------------*/
+
+.container__8a031.modal_e44912 {
+    border: none;
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
 /*Searchbar*/
 .searchBar_c7e907 {
     border: none !important;
@@ -199,11 +205,12 @@
     background-color: var(--background-tertiary);
 }
 
-.headerText_b3f026 {
-    color: var(--chillout-links);
+.headerText_b3f026,
+.defaultColor__5345c {
+    color: var(--chillout-links) !important;
 }
 
-.item_b3f026 {
+.item_caf372 {
     color: var(--color-text) !important;
     clip-path: var(--chillout-hexagon-longselection);
 }
@@ -324,18 +331,15 @@
     border-color: var(--color-text) !important;
 }
 
-/*Todo inner Checkbox*/
-
-
 /* all close buttons in settings*/
-.closeButton_c2b141 {
+.contentHeader_e9e3ed button {
     clip-path: var(--chillout-hexagon-default);
-    background-color: var(--color-text);
-    border-color: var(--color-text);
+    background-color: var(--color-textbg);
+    border-color: var(--color-textbg);
     color: var(--background-tertiary);
 }
 
-.closeButton_c2b141:hover {
+.contentHeader_e9e3ed button:hover {
     clip-path: var(--chillout-hexagon-default);
     background-color: var(--chillout-links);
     border-color: var(--chillout-links);
@@ -385,6 +389,10 @@
 .socialLinks__7df54 a svg,
 .clickable__2debe div span {
     color: var(--color-text) !important;
+}
+
+.anchor_edefb8 span {
+    color: var(--chillout-links) !important;
 }
 
 /*selected icon*/
@@ -711,7 +719,7 @@
 .defaultColor__4bd52 span,
 .defaultColor__4bd52,
 .defaultColor__5345c {
-    color: var(--color-text) !important;
+    color: var(--color-text);
 }
 
 .overlay_c0bea0.panel_c0bea0.overlay__747b1,
