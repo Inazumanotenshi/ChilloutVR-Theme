@@ -1,24 +1,51 @@
 /**
  * @name CVRUIAnimation
  * @description Give your UI the nice animation that the ChilloutVR UI has (inspired by the snowfall js)
- * @version 0.0.1
+ * @version 0.1.0
  * @author Inazumanotenshi
- * @source 
+ * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme/blob/main/CVRUIAnimation.plugin.js 
  */
 
 module.exports = (function(CopleHexagon, hexagon, blur, focus){
   class UIEffect {
     start(){
-      BdApi.injectCSS("uieffect", CopleHexagon.css);
+
+      //NewCSSInjector
+      const cssId = "uieffect";
+      const css = CopleHexagon.css;
+
+      if (BdApi && typeof BdApi.injectCSS === "function") {
+        BdApi.injectCSS(cssId, css);
+      } else {
+        let style = document.getElementById(cssId);
+        if (!style) {
+          style = document.createElement("style");
+          style.id = cssId;
+          document.head.appendChild(style);
+        }
+        style.textContent = css;
+      }
+      // ---------------------------------------
+
       hexagon = new CopleHexagon({autoplay: false});
       if(document.hasFocus()) hexagon.play();
-      window.addEventListener("blur", blur =_=> hexagon.stop());
-      window.addEventListener("focus", focus =_=> hexagon.play());
+      window.addEventListener("blur", blur = _ => hexagon.stop());
+      window.addEventListener("focus", focus = _ => hexagon.play());
     }
-    stop(){
+
+    stop(){//Fallback
+      const cssId = "uieffect";
+
+      if (BdApi && typeof BdApi.clearCSS === "function") {
+        BdApi.clearCSS(cssId);
+      } else {
+        const style = document.getElementById(cssId);
+        if (style) style.remove();
+      }
+
       hexagon.stop();
-      BdApi.clearCSS("uieffect");
-      document.getElementById("hexagonfield").remove();
+      const f = document.getElementById("hexagonfield");
+      if (f) f.remove();
       window.removeEventListener("blur", blur);
       window.removeEventListener("focus", focus);
     }
@@ -36,7 +63,7 @@ module.exports = (function(CopleHexagon, hexagon, blur, focus){
         content: "&#10052",
         fadeOut: true,
         autoplay: true,
-        interval: 200
+        interval: 500
       };
 
     function cssPrefix(propertyName) {
@@ -134,7 +161,10 @@ module.exports = (function(CopleHexagon, hexagon, blur, focus){
       function hexagonflake() {
         var _$hexagonflake = $hexagonflake.cloneNode();
         if (options.type != "solid") {
-          _$hexagonflake[isImage ? "src" : "innerHTML"] = typeof options.content == "string" ? options.content : options.content[cntLength == 0 ? 0 : Math.floor(Math.random() * cntLength)];
+          _$hexagonflake[isImage ? "src" : "innerHTML"] = 
+            typeof options.content == "string" 
+              ? options.content 
+              : options.content[cntLength == 0 ? 0 : Math.floor(Math.random() * cntLength)];
         };
 
         return _$hexagonflake;
@@ -143,21 +173,14 @@ module.exports = (function(CopleHexagon, hexagon, blur, focus){
       function hexagonAnimate() {
         var size = random(options.minSize, options.maxSize);
 
-        // Start unten
         var startTop = winHeight + size;
         var left = random(0, winWidth - size);
         var opacity = random(7, 10) / 10;
 
-        // Zielposition: 25 % nach oben verschwinden
         var targetY = -(winHeight * 0.25);
-
-        // Dezente, aber sichtbare Rotation
         var rotateAngle = random(90, 360);
-
-        // Dauer der Animation
         var duration = random(1500, 3500);
 
-        // Farben rotieren
         var colors = ["#ff3c00", "#5f5f5f", "#ffffff"];
         var color = colors[Math.floor(Math.random() * colors.length)];
 
@@ -240,6 +263,7 @@ module.exports = (function(CopleHexagon, hexagon, blur, focus){
     return UIEffect;
 
   })(window, document);
+
   CopleHexagon.css = `
   #hexagonfield {
     pointer-events: none;
