@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.10.0 Preview 1
+ * @version 0.10.0 Preview 2
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -51,6 +51,10 @@
     rotate: 90deg;
 }
 
+.blobContainer_e5445c {
+    rotate: -90deg;
+}
+
 #app-mount .itemsContainer_ef3116,
 #app-mount .stack_dbd263 {
     flex-direction: var(--HSL-server-direction);
@@ -72,11 +76,6 @@
 
 .container_c48ade > div[style]:not(.base_c48ade) + .base_c48ade .content__5e434 {
     margin-top: calc(var(--custom-guild-list-width) * 2);
-}
-
-:root {
-    --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column /
-    --HSL-server-alignment: flex-start; / Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
 }
 
 
