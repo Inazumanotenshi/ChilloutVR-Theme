@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.8.11
+ * @version 0.10.0
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -51,6 +51,10 @@
     rotate: 90deg;
 }
 
+.blobContainer_e5445c {
+    rotate: -90deg;
+}
+
 #app-mount .itemsContainer_ef3116,
 #app-mount .stack_dbd263 {
     flex-direction: var(--HSL-server-direction);
@@ -72,11 +76,6 @@
 
 .container_c48ade > div[style]:not(.base_c48ade) + .base_c48ade .content__5e434 {
     margin-top: calc(var(--custom-guild-list-width) * 2);
-}
-
-:root {
-    --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column /
-    --HSL-server-alignment: flex-start; / Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
 }
 
 
@@ -145,32 +144,43 @@
 }
 
 /*-------------------------------------Settings----------------------------------------------*/
+
+.container__8a031.modal_e44912 {
+    border: none;
+    clip-path: var(--chillout-hexagon-bighigh);
+}
+
 /*Searchbar*/
 .searchBar_c7e907 {
     border: none !important;
 }
 
-.inner_fea832.thin_d125d2 {
+.container__0f084 {
     background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-longselection) !important;
 }
 
-.inner_fea832.thin_d125d2 .input_fea832 {
+.container__0f084 .input__0f084 {
     color: var(--color-text);
 }
 
-.inner_fea832.thin_d125d2 .input_fea832::placeholder {
+.container__0f084 .input__0f084::placeholder {
     color: var(--color-text);
 }
 
 /*selected tab*/
-.selected_b3f026::after {
+.selected_aa8da2::after {
     --selected-tab-item-color: var(--chillout-links) !important;
 }
 
+.tab_f8303a.selected_aa8da2 {    
+    color: var(--chillout-links) !important;
+    background-color: unset !important;
+}
+
 /*Buttons*/
-.button__201d5.lookOutlined__201d5,
-.fieldButton__1fed1.button__201d5 {
+.button_a22cb0.lookOutlined__201d5,
+.fieldButton__1fed1 .button_a22cb0 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--color-textbg);
 }
@@ -194,11 +204,12 @@
     background-color: var(--background-tertiary);
 }
 
-.headerText_b3f026 {
-    color: var(--chillout-links);
+.headerText_b3f026,
+.defaultColor__5345c {
+    color: var(--chillout-links) !important;
 }
 
-.item_b3f026 {
+.item_caf372 {
     color: var(--color-text) !important;
     clip-path: var(--chillout-hexagon-longselection);
 }
@@ -242,13 +253,22 @@
 }
 
 /*Selections*/
-.item__001a7 {
+.item_aa8da2.selected_aa8da2 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--color-textbg);
 }
 
-[role="radiogroup"] .item__001a7 {
+.item_aa8da2 {
+    clip-path: var(--chillout-hexagon-longselection);
+    color: var(--color-text) !important;
+}
+
+[role="radiogroup"] .item_aa8da2 {
     clip-path: var(--chillout-hexagon-high);
+}
+
+.headerText_aa8da2 {
+    color: var(--chillout-links);
 }
 
 .info__001a7 {
@@ -282,31 +302,43 @@
     margin-right: 5px !important;
 }
 
+/*example in language selection*/
+.item__88a69.itemFilled__88a69 {
+    background-color: unset;
+}
+
 /*Checkboxes*/
-.radioBar__1bda4 div svg path {
-    fill: var(--transparent);
+.radioIndicator__88a69 circle {
+    display: none;
 }
 
-.itemFilled__1bda4 .radioBar__1bda4 div svg {
-    border: var(--color-text) !important;
+.radioIndicatorGroup__88a69{
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 2px !important;
     border-color: var(--color-text) !important;
-    border-style: solid !important;
-    margin-left: 10px;
-    margin-top: 2px;
 }
 
-/*Todo inner Checkbox*/
-
+.radioIndicatorGroup__88a69 .radioIndicatorChecked__88a69 {
+    margin-left: -2px;
+    margin-top: -2px;
+    width: 50%;
+    height: 50%;
+    border: 10px solid;
+    border-radius: 2px !important;
+    border-color: var(--color-text) !important;
+}
 
 /* all close buttons in settings*/
-.closeButton_c2b141 {
+.contentHeader_e9e3ed button {
     clip-path: var(--chillout-hexagon-default);
-    background-color: var(--color-text);
-    border-color: var(--color-text);
+    background-color: var(--color-textbg);
+    border-color: var(--color-textbg);
     color: var(--background-tertiary);
 }
 
-.closeButton_c2b141:hover {
+.contentHeader_e9e3ed button:hover {
     clip-path: var(--chillout-hexagon-default);
     background-color: var(--chillout-links);
     border-color: var(--chillout-links);
@@ -356,6 +388,10 @@
 .socialLinks__7df54 a svg,
 .clickable__2debe div span {
     color: var(--color-text) !important;
+}
+
+.anchor_edefb8 span {
+    color: var(--chillout-links) !important;
 }
 
 /*selected icon*/
@@ -446,7 +482,7 @@
 }
 
 /*search bar*/
-.searchBar__35e86 button {
+.searchBar_e6b769 button {
     color: var(--color-text) !important;
     background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-longselection);
@@ -682,7 +718,7 @@
 .defaultColor__4bd52 span,
 .defaultColor__4bd52,
 .defaultColor__5345c {
-    color: var(--color-text) !important;
+    color: var(--color-text);
 }
 
 .overlay_c0bea0.panel_c0bea0.overlay__747b1,
@@ -708,6 +744,10 @@
     background-color: var(--color-textbg);
 }
 
+.rtcConnectionStatus__06d62 .labelWrapper__06d62 {
+    margin-top: 21px;
+    margin-left: -100px;
+}
 
 /*--------------------------------------friend list------------------------------------------*/
 .container__133bf,
@@ -1243,6 +1283,29 @@
     fill: var(--color-text);
 }
 
+/*-----------------------------------Voice Msgs actions----------------------------------*/
+.container_a8e786 {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--color-textbg);
+}
+
+.playButtonContainer_a8e786 {
+    clip-path: var(--chillout-hexagon-default);
+    background: var(--chillout-links);
+}
+
+.playButtonContainer_a8e786:hover {
+    background: var(--color-text) !important;
+}
+
+.playButtonContainer_a8e786:hover svg {
+    color: var(--chillout-links);
+}
+
+.playing_a8e786 {
+    background-color: var(--chillout-links) !important;
+}
+
 
 /*-------------------------------------BetterDiscord---------------------------------------*/
 
@@ -1383,6 +1446,16 @@
     background-color: var(--color-textbg);
     clip-path: var(--chillout-hexagon-longselection);
     color: var(--color-text);
+}
+
+.bd-select {
+    clip-path: var(--chillout-hexagon-longselection);
+    background-color: var(--color-textbg);
+}
+
+.bd-select.menu-open {
+    clip-path: unset;
+    background-color: var(--color-textbg);
 }
 
 /*----------Plugins-------------*/
