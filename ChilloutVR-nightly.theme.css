@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.11.0 Preview 1
+ * @version 0.11.0 Preview 2
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -47,7 +47,8 @@
     padding-top: var(--HSL-top-padding, var(--size-sm));
 }
 
-#app-mount .cc5dd25190031396-wrapper {
+#app-mount .cc5dd25190031396-wrapper,
+.cc5dd25190031396-upperBadge {
     rotate: 90deg;
 }
 
@@ -616,6 +617,11 @@
 
 .e131a99484292a19-inner div {
     width: 129% !important;
+}
+
+._06d6249a1f2584ac-labelWrapper {
+    margin-left: -60%;
+    margin-top: 0% !important;
 }
 
 /*action buttons call*/
