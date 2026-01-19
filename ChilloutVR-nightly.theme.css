@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.11.0 Preview 7
+ * @version 0.12.0 Preview 1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -232,25 +232,22 @@
 }
 
 /*CheckBoxes & Sliders*/
-._3f21e80f8677ec40-container {
+.a2827844fe91d55f-container {
     clip-path: var(--chillout-hexagon-check) !important;
-    color: var(--color-textbg);
+    color: var(--color-textbg) !important;
+    background: var(--color-textbg);
 }
 
-._3f21e80f8677ec40-container ._3f21e80f8677ec40-slider rect {
+.a2827844fe91d55f-container .a2827844fe91d55f-switchIndicator rect {
     clip-path: var(--chillout-hexagon-default);
     background: var(--color-text);
 }
 
-._3f21e80f8677ec40-slider svg {
+.a2827844fe91d55f-switchIndicator svg {
     display: none;
 }
 
-._3f21e80f8677ec40-checked._3f21e80f8677ec40-container {
-    background-color: var(--color-text) !important;
-}
-
-._3f21e80f8677ec40-checked._3f21e80f8677ec40-container ._3f21e80f8677ec40-slider rect {
+.a2827844fe91d55f-container ._3f21e80f8677ec40-slider rect {
     fill: var(--background-tertiary) !important;
     background-color: var(--background-tertiary) !important;
 }
@@ -315,11 +312,11 @@
 }
 
 /*Checkboxes*/
-._88a69141dd70013a-radioIndicator circle {
+._64e6155a0667273d-radioIndicator circle {
     display: none;
 }
 
-._88a69141dd70013a-radioIndicatorGroup{
+._64e6155a0667273d-radioGroupOption {
     width: 20px;
     height: 20px;
     border: 2px solid;
@@ -327,7 +324,7 @@
     border-color: var(--color-text) !important;
 }
 
-._88a69141dd70013a-radioIndicatorGroup ._88a69141dd70013a-radioIndicatorChecked {
+._64e6155a0667273d-radioGroupOption[data-selected="true"] svg {
     margin-left: -2px;
     margin-top: -2px;
     width: 50%;
@@ -335,6 +332,11 @@
     border: 10px solid;
     border-radius: 2px !important;
     border-color: var(--color-text) !important;
+}
+._64e6155a0667273d-radioGroupOption div div {
+    min-width: 800px;
+    margin-top: -9px;
+    overflow: visible !important; 
 }
 
 /* all close buttons in settings*/
@@ -926,7 +928,7 @@
 }
 
 /*search message*/
-._974928fe84ca9647-searchBar {
+.c322aadb96ff59c9-searchBar {
     background-color: var(--color-textbg) !important;
     clip-path: var(--chillout-hexagon-high);
     border: none;
