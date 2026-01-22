@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.12.0 Preview 1
+ * @version 0.12.0 Preview 2
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -22,7 +22,6 @@
  */
 
 /*Puts your server list on top of Discord - comment out if you dislike*/
-/*@import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');*/
 
 ._5e434347c823b592-content {
     margin-top: var(--custom-guild-list-width);
@@ -84,7 +83,7 @@
 ._5e434347c823b592-container > div[style]:not(._5e434347c823b592-base) + ._5e434347c823b592-base ._5e434347c823b592-content {
     margin-top: calc(var(--custom-guild-list-width) * 2);
 }
-
+/*End of horizontal server list*/
 
 :root {
 
@@ -606,6 +605,10 @@
 
 ._37e49614b9f110a9-micButtonParent {
     margin-right: 0%;
+}
+
+._37e49614b9f110a9-micButtonParent {
+    clip-path: var(--chillout-hexagon-longselection);
 }
 
 ._67645e1530f1195d-button {
@@ -1602,7 +1605,7 @@
 }
 
 .gameActivityToggleAdded_fd3fb5 ._37e49614b9f110a9-buttons .gameActivityToggleButton_fd3fb5 {
-    margin-left: 350% !important;
+    margin-left: 450% !important;
 }
 
 /*Server Details Plus*/
