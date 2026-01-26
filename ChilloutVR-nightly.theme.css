@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.13.0 Preview 1
+ * @version 0.13.0 Preview 2
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -227,17 +227,17 @@
 
 /*parts that are not alligned to left*/
 .flex__7c0ba {
-    margin-left: 0% !important;
+    margin-left: -0% !important;
 }
 
 /*CheckBoxes & Sliders*/
-.container_a28278 {
+.container__0b406 {
     clip-path: var(--chillout-hexagon-check) !important;
     color: var(--color-textbg) !important;
     background: var(--color-textbg);
 }
 
-.container_a28278 .switchIndicator_a28278 rect {
+.container__0b406 .switchIndicator_a28278 rect {
     clip-path: var(--chillout-hexagon-default);
     background: var(--color-text);
 }
@@ -246,7 +246,7 @@
     display: none;
 }
 
-.container_a28278 .slider__3f21e rect {
+.container__0b406 .slider__3f21e rect {
     fill: var(--background-tertiary) !important;
     background-color: var(--background-tertiary) !important;
 }
@@ -615,12 +615,21 @@
     clip-path: var(--chillout-hexagon-default);
 }
 
+.micButtonParent__37e49 .button__67645 {
+    clip-path: unset;
+}
+
 .lottieIcon__5eb9b svg path {
     fill: var(--color-text) !important;
 }
 
 .listRow__9d78f {
     clip-path: var(--chillout-hexagon-longselection);
+}
+
+.container_e131a9 {
+    margin-top: -10px !important;
+    margin-left: -15px;
 }
 
 /*call actions*/
