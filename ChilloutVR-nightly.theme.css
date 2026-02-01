@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.13.0 Preview 2
+ * @version 0.13.0 Preview 3
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -133,7 +133,7 @@
     background-image: url(https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/74e98451853369200870be2e5dd48f41f2f2e77e/ChillcordVR.svg);  
     background-size: 100px;
     background-repeat: no-repeat;  
-    background-position: 15px 15px;
+    background-position: 70px 9px;
 }
 
 /*Windows buttons*/
