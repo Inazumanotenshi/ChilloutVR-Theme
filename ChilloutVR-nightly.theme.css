@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.13.0 Preview 4
+ * @version 0.13.0
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -179,14 +179,14 @@
     --selected-tab-item-color: var(--chillout-links) !important;
 }
 
-.tab_f8303a.selected_aa8da2 {    
+.tab_eeedb9.selected_aa8da2 {    
     color: var(--chillout-links) !important;
     background-color: unset !important;
 }
 
 /*Buttons*/
 .button_a22cb0.lookOutlined__201d5,
-.fieldButton__1fed1 .button_a22cb0 {
+.fieldButton_a27e58 .button_a22cb0 {
     clip-path: var(--chillout-hexagon-longselection);
     background-color: var(--color-textbg);
 }
@@ -365,7 +365,7 @@
 }
 
 /*Gifcode show*/
-.promotionCardLeftContainer_d4883c {
+.promotionCardLeftContainer__70dc3 {
     min-width: 70% !important;
 }
 
@@ -384,11 +384,11 @@
     clip-path: var(--chillout-hexagon-longselection);
 }
 
-.tab_f8303a {
+.tab_eeedb9 {
     clip-path: none !important;
 }
 
-.tab_f8303a.selected_aa8da2 {
+.tab_eeedb9.selected_aa8da2 {
     border-bottom-color: var(--chillout-links) !important;
 }
 
@@ -1589,7 +1589,7 @@
     color: var(--color-text);
 }
 
-.container_lsd8Sa .tabBar_f8303a .tab_f8303a {
+.container_lsd8Sa .tabBar_eeedb9 .tab_eeedb9 {
     clip-path: unset;
 }
 
