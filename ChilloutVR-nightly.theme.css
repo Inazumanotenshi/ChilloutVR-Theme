@@ -6,7 +6,7 @@
                 https://chilloutvr.net                                     
                 !other themes can make this break!
                 - Sharing and upload allow by c ChilloutVR
- * @version 0.13.0
+ * @version 0.13.1
  * @authorLink https://github.com/Inazumanotenshi/
  * @updateUrl https://raw.githubusercontent.com/Inazumanotenshi/ChilloutVR-Theme/main/ChilloutVR-nightly.theme.css
  * @source https://github.com/Inazumanotenshi/ChilloutVR-Theme
@@ -154,6 +154,18 @@
 .container__8a031.modal_e44912 {
     border: none;
     clip-path: var(--chillout-hexagon-bighigh);
+}
+
+/*fix a container that was behaving strange*/
+.description__64e61 {
+    width: 700px !important;
+    margin-top: 40px;
+}
+
+.group__64e61 label span {
+    display: flex !important;
+    width: 400px !important;
+    margin-left: 10px;
 }
 
 /*Searchbar*/
@@ -1099,6 +1111,26 @@
 
 .sectionRowsContentContainer__927fc.sectionContentContainer__927fc {
     clip-path: var(--chillout-hexagon-bighigh);
+}
+
+/* force show colors of users and not only when hover */
+[class*="container_"] > [class*="innerContainer_"][class*="gradient_"],
+[class*="username_"] [class*="innerContainer_"],
+[class*="usernameText_"] [class*="gradient_"] {
+    background-image: linear-gradient(
+        var(--custom-display-name-styles-gradient-angle, 90deg),
+        var(--custom-display-name-styles-gradient-stops, #fff)
+    ) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: none !important;
+}
+
+[class*="container_"][class*="loop_"] [class*="innerContainer_"] {
+    animation-play-state: running !important;
 }
 
 /*----------------------------------------Server---------------------------------------------*/
